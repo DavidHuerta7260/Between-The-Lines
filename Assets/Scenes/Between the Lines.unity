@@ -2252,6 +2252,16 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7870953461983454306, guid: 75a4ca3c19e334f4795c4acf8aea02ee,
         type: 3}
+      propertyPath: nameBox
+      value: 
+      objectReference: {fileID: 1278592502}
+    - target: {fileID: 7870953461983454306, guid: 75a4ca3c19e334f4795c4acf8aea02ee,
+        type: 3}
+      propertyPath: nameText
+      value: 
+      objectReference: {fileID: 1278592501}
+    - target: {fileID: 7870953461983454306, guid: 75a4ca3c19e334f4795c4acf8aea02ee,
+        type: 3}
       propertyPath: dialogBox
       value: 
       objectReference: {fileID: 1990400434}
@@ -2265,6 +2275,16 @@ PrefabInstance:
       propertyPath: journalManager
       value: 
       objectReference: {fileID: 1824340809}
+    - target: {fileID: 7870953461983454306, guid: 75a4ca3c19e334f4795c4acf8aea02ee,
+        type: 3}
+      propertyPath: nameLines.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7870953461983454306, guid: 75a4ca3c19e334f4795c4acf8aea02ee,
+        type: 3}
+      propertyPath: nameLines.Array.data[0]
+      value: Jim
+      objectReference: {fileID: 0}
     - target: {fileID: 7870953461983454309, guid: 75a4ca3c19e334f4795c4acf8aea02ee,
         type: 3}
       propertyPath: m_RootOrder
@@ -2798,6 +2818,16 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2150181875637048166, guid: 4b51d0f4444e6ae43814bfd4ea2219bf,
         type: 3}
+      propertyPath: nameBox
+      value: 
+      objectReference: {fileID: 1278592502}
+    - target: {fileID: 2150181875637048166, guid: 4b51d0f4444e6ae43814bfd4ea2219bf,
+        type: 3}
+      propertyPath: nameText
+      value: 
+      objectReference: {fileID: 1278592501}
+    - target: {fileID: 2150181875637048166, guid: 4b51d0f4444e6ae43814bfd4ea2219bf,
+        type: 3}
       propertyPath: dialogBox
       value: 
       objectReference: {fileID: 1990400434}
@@ -2811,6 +2841,16 @@ PrefabInstance:
       propertyPath: journalManager
       value: 
       objectReference: {fileID: 1824340809}
+    - target: {fileID: 2150181875637048166, guid: 4b51d0f4444e6ae43814bfd4ea2219bf,
+        type: 3}
+      propertyPath: nameLines.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2150181875637048166, guid: 4b51d0f4444e6ae43814bfd4ea2219bf,
+        type: 3}
+      propertyPath: nameLines.Array.data[0]
+      value: John
+      objectReference: {fileID: 0}
     - target: {fileID: 2150181875637048186, guid: 4b51d0f4444e6ae43814bfd4ea2219bf,
         type: 3}
       propertyPath: m_Name
@@ -8461,6 +8501,24 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 58bd2b2c2e11b5d4b8416edb1dcde9f5, type: 3}
+--- !u!114 &1278592501 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4802644423805083178, guid: 58bd2b2c2e11b5d4b8416edb1dcde9f5,
+    type: 3}
+  m_PrefabInstance: {fileID: 1278592500}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!1 &1278592502 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6635354905861375458, guid: 58bd2b2c2e11b5d4b8416edb1dcde9f5,
+    type: 3}
+  m_PrefabInstance: {fileID: 1278592500}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1310150008
 GameObject:
   m_ObjectHideFlags: 0
@@ -25399,6 +25457,16 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2982374956584992772, guid: acf4808c6cd5c4e4eb5fedd1565c6e15,
         type: 3}
+      propertyPath: nameBox
+      value: 
+      objectReference: {fileID: 1278592502}
+    - target: {fileID: 2982374956584992772, guid: acf4808c6cd5c4e4eb5fedd1565c6e15,
+        type: 3}
+      propertyPath: nameText
+      value: 
+      objectReference: {fileID: 1278592501}
+    - target: {fileID: 2982374956584992772, guid: acf4808c6cd5c4e4eb5fedd1565c6e15,
+        type: 3}
       propertyPath: dialogBox
       value: 
       objectReference: {fileID: 1990400434}
@@ -25412,6 +25480,16 @@ PrefabInstance:
       propertyPath: journalManager
       value: 
       objectReference: {fileID: 1824340809}
+    - target: {fileID: 2982374956584992772, guid: acf4808c6cd5c4e4eb5fedd1565c6e15,
+        type: 3}
+      propertyPath: nameLines.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2982374956584992772, guid: acf4808c6cd5c4e4eb5fedd1565c6e15,
+        type: 3}
+      propertyPath: nameLines.Array.data[0]
+      value: Jorge
+      objectReference: {fileID: 0}
     - target: {fileID: 2982374956584992775, guid: acf4808c6cd5c4e4eb5fedd1565c6e15,
         type: 3}
       propertyPath: m_RootOrder
@@ -64540,6 +64618,16 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7006341776443319772, guid: de3ed324e1976e2419f31c30b75cf38a,
         type: 3}
+      propertyPath: nameBox
+      value: 
+      objectReference: {fileID: 1278592502}
+    - target: {fileID: 7006341776443319772, guid: de3ed324e1976e2419f31c30b75cf38a,
+        type: 3}
+      propertyPath: nameText
+      value: 
+      objectReference: {fileID: 1278592501}
+    - target: {fileID: 7006341776443319772, guid: de3ed324e1976e2419f31c30b75cf38a,
+        type: 3}
       propertyPath: dialogBox
       value: 
       objectReference: {fileID: 1990400434}
@@ -64553,6 +64641,16 @@ PrefabInstance:
       propertyPath: journalManager
       value: 
       objectReference: {fileID: 1824340809}
+    - target: {fileID: 7006341776443319772, guid: de3ed324e1976e2419f31c30b75cf38a,
+        type: 3}
+      propertyPath: nameLines.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7006341776443319772, guid: de3ed324e1976e2419f31c30b75cf38a,
+        type: 3}
+      propertyPath: nameLines.Array.data[0]
+      value: Jane
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: de3ed324e1976e2419f31c30b75cf38a, type: 3}
 --- !u!1 &1431214852 stripped
@@ -81439,6 +81537,16 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4088229037160773237, guid: 692a4b0a70227cc48ae021f57f9a56fd,
         type: 3}
+      propertyPath: nameBox
+      value: 
+      objectReference: {fileID: 1278592502}
+    - target: {fileID: 4088229037160773237, guid: 692a4b0a70227cc48ae021f57f9a56fd,
+        type: 3}
+      propertyPath: nameText
+      value: 
+      objectReference: {fileID: 1278592501}
+    - target: {fileID: 4088229037160773237, guid: 692a4b0a70227cc48ae021f57f9a56fd,
+        type: 3}
       propertyPath: dialogBox
       value: 
       objectReference: {fileID: 1990400434}
@@ -81452,6 +81560,16 @@ PrefabInstance:
       propertyPath: journalManager
       value: 
       objectReference: {fileID: 1824340809}
+    - target: {fileID: 4088229037160773237, guid: 692a4b0a70227cc48ae021f57f9a56fd,
+        type: 3}
+      propertyPath: nameLines.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4088229037160773237, guid: 692a4b0a70227cc48ae021f57f9a56fd,
+        type: 3}
+      propertyPath: nameLines.Array.data[0]
+      value: Joe
+      objectReference: {fileID: 0}
     - target: {fileID: 4347718278883248904, guid: 692a4b0a70227cc48ae021f57f9a56fd,
         type: 3}
       propertyPath: m_LocalScale.x

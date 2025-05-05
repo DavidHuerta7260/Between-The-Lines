@@ -33453,11 +33453,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 2237530959799979953, guid: 58bd2b2c2e11b5d4b8416edb1dcde9f5,
-        type: 3}
-      propertyPath: m_text
-      value: 
-      objectReference: {fileID: 0}
     - target: {fileID: 2237530960898337641, guid: 58bd2b2c2e11b5d4b8416edb1dcde9f5,
         type: 3}
       propertyPath: m_Pivot.x
@@ -33567,76 +33562,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: NPC Dialog Box
-      objectReference: {fileID: 0}
-    - target: {fileID: 2237530960905552468, guid: 58bd2b2c2e11b5d4b8416edb1dcde9f5,
-        type: 3}
-      propertyPath: m_SizeDelta.x
-      value: -852.4871
-      objectReference: {fileID: 0}
-    - target: {fileID: 2237530960905552468, guid: 58bd2b2c2e11b5d4b8416edb1dcde9f5,
-        type: 3}
-      propertyPath: m_SizeDelta.y
-      value: -772.8634
-      objectReference: {fileID: 0}
-    - target: {fileID: 2237530960905552468, guid: 58bd2b2c2e11b5d4b8416edb1dcde9f5,
-        type: 3}
-      propertyPath: m_AnchoredPosition.x
-      value: -42.355774
-      objectReference: {fileID: 0}
-    - target: {fileID: 2237530960905552468, guid: 58bd2b2c2e11b5d4b8416edb1dcde9f5,
-        type: 3}
-      propertyPath: m_AnchoredPosition.y
-      value: -123.66974
-      objectReference: {fileID: 0}
-    - target: {fileID: 2237530960905552471, guid: 58bd2b2c2e11b5d4b8416edb1dcde9f5,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 3514782716499126938, guid: 58bd2b2c2e11b5d4b8416edb1dcde9f5,
-        type: 3}
-      propertyPath: m_Name
-      value: NameText
-      objectReference: {fileID: 0}
-    - target: {fileID: 4502316851180440890, guid: 58bd2b2c2e11b5d4b8416edb1dcde9f5,
-        type: 3}
-      propertyPath: m_Text
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 4802644423805083178, guid: 58bd2b2c2e11b5d4b8416edb1dcde9f5,
-        type: 3}
-      propertyPath: m_text
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 5742478792040878958, guid: 58bd2b2c2e11b5d4b8416edb1dcde9f5,
-        type: 3}
-      propertyPath: m_SizeDelta.x
-      value: -1189.2808
-      objectReference: {fileID: 0}
-    - target: {fileID: 5742478792040878958, guid: 58bd2b2c2e11b5d4b8416edb1dcde9f5,
-        type: 3}
-      propertyPath: m_SizeDelta.y
-      value: -825.0217
-      objectReference: {fileID: 0}
-    - target: {fileID: 5742478792040878958, guid: 58bd2b2c2e11b5d4b8416edb1dcde9f5,
-        type: 3}
-      propertyPath: m_AnchoredPosition.x
-      value: -210.75269
-      objectReference: {fileID: 0}
-    - target: {fileID: 5742478792040878958, guid: 58bd2b2c2e11b5d4b8416edb1dcde9f5,
-        type: 3}
-      propertyPath: m_AnchoredPosition.y
-      value: -97.590576
-      objectReference: {fileID: 0}
-    - target: {fileID: 6635354905861375458, guid: 58bd2b2c2e11b5d4b8416edb1dcde9f5,
-        type: 3}
-      propertyPath: m_Name
-      value: NPCName
-      objectReference: {fileID: 0}
-    - target: {fileID: 7296468476493555790, guid: 58bd2b2c2e11b5d4b8416edb1dcde9f5,
-        type: 3}
-      propertyPath: m_Color.a
-      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 58bd2b2c2e11b5d4b8416edb1dcde9f5, type: 3}
