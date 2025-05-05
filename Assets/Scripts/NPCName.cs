@@ -1,20 +1,16 @@
-﻿using UnityEngine;
+/*using UnityEngine;
 using TMPro;
 
-public class NPCDialogue : MonoBehaviour
+public class NPCName : MonoBehaviour
 {
     [Header("UI Elements")]
-    public GameObject dialogBox;
-    public TextMeshProUGUI dialogText;
     public GameObject nameBox;
     public TextMeshProUGUI nameText;
 
     [Header("Dialog Content")]
     [TextArea]
-    public string[] dialogueLines;
-    private int currentLineIndex = 0;
-    private bool dialogActive = false;
     public string[] nameLines;
+    private int currentLineIndex = 0;
     private bool nameActive = false;
 
     [Header("Journal")]
@@ -31,29 +27,26 @@ public class NPCDialogue : MonoBehaviour
         {
             if (Input.GetKeyDown(KeyCode.E))
             {
-                if (!dialogActive)
+                if (!nameActive)
                 {
-                    StartDialog();
+                    StartName();
                 }
                 else
                 {
-                    ContinueDialog();
+                    ContinueName();
                 }
             }
 
-            if (nameActive && dialogActive && Input.GetKeyDown(KeyCode.Q))
+            if (nameActive && Input.GetKeyDown(KeyCode.Q))
             {
-                EndDialog();
+                EndName();
             }
         }
     }
 
-    void StartDialog()
+    void StartName()
     {
         currentLineIndex = 0;
-        dialogActive = true;
-        dialogBox.SetActive(true);
-        dialogText.text = dialogueLines[currentLineIndex];
         nameActive = true;
         nameBox.SetActive(true);
         nameText.text = nameLines[currentLineIndex];
@@ -65,25 +58,22 @@ public class NPCDialogue : MonoBehaviour
         }
     }
 
-    void ContinueDialog()
+    void ContinueName()
     {
         currentLineIndex++;
 
-        if (currentLineIndex < dialogueLines.Length)
+        if (currentLineIndex < nameLines.Length)
         {
-            dialogText.text = dialogueLines[currentLineIndex];
-            nameText.text = nameLines[0];
+            nameText.text = nameLines[currentLineIndex];
         }
         else
         {
-            EndDialog();
+            EndName();
         }
     }
 
-    void EndDialog()
+    void EndName()
     {
-        dialogBox.SetActive(false);
-        dialogActive = false;
         nameBox.SetActive(false);
         nameActive = false;
     }
@@ -101,8 +91,9 @@ public class NPCDialogue : MonoBehaviour
         if (other.CompareTag("Player"))
         {
             playerInRange = false;
-            EndDialog();
+            EndName();
         }
     }
 }
 
+*/
