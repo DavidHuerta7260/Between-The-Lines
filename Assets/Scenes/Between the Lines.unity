@@ -123,6 +123,18 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!114 &1819051 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 413589849449757010, guid: 58bd2b2c2e11b5d4b8416edb1dcde9f5,
+    type: 3}
+  m_PrefabInstance: {fileID: 1278592500}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &40313656
 GameObject:
   m_ObjectHideFlags: 0
@@ -1609,7 +1621,7 @@ PrefabInstance:
         type: 3}
       propertyPath: dialogBox
       value: 
-      objectReference: {fileID: 1990400434}
+      objectReference: {fileID: 0}
     - target: {fileID: 2982374956584992772, guid: acf4808c6cd5c4e4eb5fedd1565c6e15,
         type: 3}
       propertyPath: m_Enabled
@@ -1619,7 +1631,7 @@ PrefabInstance:
         type: 3}
       propertyPath: dialogText
       value: 
-      objectReference: {fileID: 975330749}
+      objectReference: {fileID: 0}
     - target: {fileID: 2982374956584992772, guid: acf4808c6cd5c4e4eb5fedd1565c6e15,
         type: 3}
       propertyPath: journalManager
@@ -2141,7 +2153,7 @@ PrefabInstance:
         type: 3}
       propertyPath: dialogBox
       value: 
-      objectReference: {fileID: 1990400434}
+      objectReference: {fileID: 0}
     - target: {fileID: 7006341776443319772, guid: de3ed324e1976e2419f31c30b75cf38a,
         type: 3}
       propertyPath: m_Enabled
@@ -2151,7 +2163,7 @@ PrefabInstance:
         type: 3}
       propertyPath: dialogText
       value: 
-      objectReference: {fileID: 975330749}
+      objectReference: {fileID: 0}
     - target: {fileID: 7006341776443319772, guid: de3ed324e1976e2419f31c30b75cf38a,
         type: 3}
       propertyPath: journalManager
@@ -2254,22 +2266,22 @@ PrefabInstance:
         type: 3}
       propertyPath: nameBox
       value: 
-      objectReference: {fileID: 1278592502}
+      objectReference: {fileID: 408976554}
     - target: {fileID: 7870953461983454306, guid: 75a4ca3c19e334f4795c4acf8aea02ee,
         type: 3}
       propertyPath: nameText
       value: 
-      objectReference: {fileID: 1278592501}
+      objectReference: {fileID: 1819051}
     - target: {fileID: 7870953461983454306, guid: 75a4ca3c19e334f4795c4acf8aea02ee,
         type: 3}
       propertyPath: dialogBox
       value: 
-      objectReference: {fileID: 1990400434}
+      objectReference: {fileID: 2072444853}
     - target: {fileID: 7870953461983454306, guid: 75a4ca3c19e334f4795c4acf8aea02ee,
         type: 3}
       propertyPath: dialogText
       value: 
-      objectReference: {fileID: 975330749}
+      objectReference: {fileID: 1629110949}
     - target: {fileID: 7870953461983454306, guid: 75a4ca3c19e334f4795c4acf8aea02ee,
         type: 3}
       propertyPath: journalManager
@@ -2559,6 +2571,12 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &408976554 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 765702412397508081, guid: 58bd2b2c2e11b5d4b8416edb1dcde9f5,
+    type: 3}
+  m_PrefabInstance: {fileID: 1278592500}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &473222350
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2590,7 +2608,7 @@ PrefabInstance:
         type: 3}
       propertyPath: dialogBox
       value: 
-      objectReference: {fileID: 1990400434}
+      objectReference: {fileID: 0}
     - target: {fileID: 7870953461983454306, guid: 75a4ca3c19e334f4795c4acf8aea02ee,
         type: 3}
       propertyPath: m_Enabled
@@ -2600,7 +2618,7 @@ PrefabInstance:
         type: 3}
       propertyPath: dialogText
       value: 
-      objectReference: {fileID: 975330749}
+      objectReference: {fileID: 0}
     - target: {fileID: 7870953461983454306, guid: 75a4ca3c19e334f4795c4acf8aea02ee,
         type: 3}
       propertyPath: journalManager
@@ -2820,22 +2838,22 @@ PrefabInstance:
         type: 3}
       propertyPath: nameBox
       value: 
-      objectReference: {fileID: 1278592502}
+      objectReference: {fileID: 408976554}
     - target: {fileID: 2150181875637048166, guid: 4b51d0f4444e6ae43814bfd4ea2219bf,
         type: 3}
       propertyPath: nameText
       value: 
-      objectReference: {fileID: 1278592501}
+      objectReference: {fileID: 1819051}
     - target: {fileID: 2150181875637048166, guid: 4b51d0f4444e6ae43814bfd4ea2219bf,
         type: 3}
       propertyPath: dialogBox
       value: 
-      objectReference: {fileID: 1990400434}
+      objectReference: {fileID: 2072444853}
     - target: {fileID: 2150181875637048166, guid: 4b51d0f4444e6ae43814bfd4ea2219bf,
         type: 3}
       propertyPath: dialogText
       value: 
-      objectReference: {fileID: 975330749}
+      objectReference: {fileID: 1629110949}
     - target: {fileID: 2150181875637048166, guid: 4b51d0f4444e6ae43814bfd4ea2219bf,
         type: 3}
       propertyPath: journalManager
@@ -3781,7 +3799,7 @@ PrefabInstance:
         type: 3}
       propertyPath: dialogBox
       value: 
-      objectReference: {fileID: 1990400434}
+      objectReference: {fileID: 0}
     - target: {fileID: 2150181875637048166, guid: 4b51d0f4444e6ae43814bfd4ea2219bf,
         type: 3}
       propertyPath: m_Enabled
@@ -3791,7 +3809,7 @@ PrefabInstance:
         type: 3}
       propertyPath: dialogText
       value: 
-      objectReference: {fileID: 975330749}
+      objectReference: {fileID: 0}
     - target: {fileID: 2150181875637048166, guid: 4b51d0f4444e6ae43814bfd4ea2219bf,
         type: 3}
       propertyPath: journalManager
@@ -6119,7 +6137,7 @@ PrefabInstance:
         type: 3}
       propertyPath: dialogBox
       value: 
-      objectReference: {fileID: 1990400434}
+      objectReference: {fileID: 0}
     - target: {fileID: 2982374956584992772, guid: acf4808c6cd5c4e4eb5fedd1565c6e15,
         type: 3}
       propertyPath: m_Enabled
@@ -6129,7 +6147,7 @@ PrefabInstance:
         type: 3}
       propertyPath: dialogText
       value: 
-      objectReference: {fileID: 975330749}
+      objectReference: {fileID: 0}
     - target: {fileID: 2982374956584992772, guid: acf4808c6cd5c4e4eb5fedd1565c6e15,
         type: 3}
       propertyPath: journalManager
@@ -6337,7 +6355,7 @@ PrefabInstance:
         type: 3}
       propertyPath: dialogBox
       value: 
-      objectReference: {fileID: 1990400434}
+      objectReference: {fileID: 0}
     - target: {fileID: 4088229037160773237, guid: 692a4b0a70227cc48ae021f57f9a56fd,
         type: 3}
       propertyPath: m_Enabled
@@ -6347,7 +6365,7 @@ PrefabInstance:
         type: 3}
       propertyPath: dialogText
       value: 
-      objectReference: {fileID: 975330749}
+      objectReference: {fileID: 0}
     - target: {fileID: 4088229037160773237, guid: 692a4b0a70227cc48ae021f57f9a56fd,
         type: 3}
       propertyPath: journalManager
@@ -6439,18 +6457,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &975330749 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 2237530959799979953, guid: 58bd2b2c2e11b5d4b8416edb1dcde9f5,
-    type: 3}
-  m_PrefabInstance: {fileID: 1278592500}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1001 &983543612
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6482,7 +6488,7 @@ PrefabInstance:
         type: 3}
       propertyPath: dialogBox
       value: 
-      objectReference: {fileID: 1990400434}
+      objectReference: {fileID: 0}
     - target: {fileID: 7870953461983454306, guid: 75a4ca3c19e334f4795c4acf8aea02ee,
         type: 3}
       propertyPath: m_Enabled
@@ -6492,7 +6498,7 @@ PrefabInstance:
         type: 3}
       propertyPath: dialogText
       value: 
-      objectReference: {fileID: 975330749}
+      objectReference: {fileID: 0}
     - target: {fileID: 7870953461983454306, guid: 75a4ca3c19e334f4795c4acf8aea02ee,
         type: 3}
       propertyPath: journalManager
@@ -7256,6 +7262,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6246977583081635942, guid: 0d7a7cf23dc23104d9834c0588db68be,
+        type: 3}
+      propertyPath: m_Color.a
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0d7a7cf23dc23104d9834c0588db68be, type: 3}
 --- !u!1001 &1153218433
@@ -7329,7 +7340,7 @@ PrefabInstance:
         type: 3}
       propertyPath: dialogBox
       value: 
-      objectReference: {fileID: 1990400434}
+      objectReference: {fileID: 0}
     - target: {fileID: 2150181875637048166, guid: 4b51d0f4444e6ae43814bfd4ea2219bf,
         type: 3}
       propertyPath: m_Enabled
@@ -7339,7 +7350,7 @@ PrefabInstance:
         type: 3}
       propertyPath: dialogText
       value: 
-      objectReference: {fileID: 975330749}
+      objectReference: {fileID: 0}
     - target: {fileID: 2150181875637048166, guid: 4b51d0f4444e6ae43814bfd4ea2219bf,
         type: 3}
       propertyPath: journalManager
@@ -8389,6 +8400,26 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 765702412397508081, guid: 58bd2b2c2e11b5d4b8416edb1dcde9f5,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1353980478394003178, guid: 58bd2b2c2e11b5d4b8416edb1dcde9f5,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2237530959799979952, guid: 58bd2b2c2e11b5d4b8416edb1dcde9f5,
+        type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 714.6152
+      objectReference: {fileID: 0}
+    - target: {fileID: 2237530959799979952, guid: 58bd2b2c2e11b5d4b8416edb1dcde9f5,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -0.5576
+      objectReference: {fileID: 0}
     - target: {fileID: 2237530960898337641, guid: 58bd2b2c2e11b5d4b8416edb1dcde9f5,
         type: 3}
       propertyPath: m_Pivot.x
@@ -8499,26 +8530,48 @@ PrefabInstance:
       propertyPath: m_Name
       value: NPC Dialog Box
       objectReference: {fileID: 0}
+    - target: {fileID: 2237530961375945293, guid: 58bd2b2c2e11b5d4b8416edb1dcde9f5,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2867782607854473164, guid: 58bd2b2c2e11b5d4b8416edb1dcde9f5,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 249
+      objectReference: {fileID: 0}
+    - target: {fileID: 2867782607854473164, guid: 58bd2b2c2e11b5d4b8416edb1dcde9f5,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -16
+      objectReference: {fileID: 0}
+    - target: {fileID: 3785286725855232730, guid: 58bd2b2c2e11b5d4b8416edb1dcde9f5,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -322
+      objectReference: {fileID: 0}
+    - target: {fileID: 3785286725855232730, guid: 58bd2b2c2e11b5d4b8416edb1dcde9f5,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -80
+      objectReference: {fileID: 0}
+    - target: {fileID: 4430221182622211624, guid: 58bd2b2c2e11b5d4b8416edb1dcde9f5,
+        type: 3}
+      propertyPath: m_SizeDelta.x
+      value: -382.8129
+      objectReference: {fileID: 0}
+    - target: {fileID: 4430221182622211624, guid: 58bd2b2c2e11b5d4b8416edb1dcde9f5,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4430221182622211624, guid: 58bd2b2c2e11b5d4b8416edb1dcde9f5,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -181.99998
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 58bd2b2c2e11b5d4b8416edb1dcde9f5, type: 3}
---- !u!114 &1278592501 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 4802644423805083178, guid: 58bd2b2c2e11b5d4b8416edb1dcde9f5,
-    type: 3}
-  m_PrefabInstance: {fileID: 1278592500}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!1 &1278592502 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 6635354905861375458, guid: 58bd2b2c2e11b5d4b8416edb1dcde9f5,
-    type: 3}
-  m_PrefabInstance: {fileID: 1278592500}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1310150008
 GameObject:
   m_ObjectHideFlags: 0
@@ -25459,22 +25512,22 @@ PrefabInstance:
         type: 3}
       propertyPath: nameBox
       value: 
-      objectReference: {fileID: 1278592502}
+      objectReference: {fileID: 408976554}
     - target: {fileID: 2982374956584992772, guid: acf4808c6cd5c4e4eb5fedd1565c6e15,
         type: 3}
       propertyPath: nameText
       value: 
-      objectReference: {fileID: 1278592501}
+      objectReference: {fileID: 1819051}
     - target: {fileID: 2982374956584992772, guid: acf4808c6cd5c4e4eb5fedd1565c6e15,
         type: 3}
       propertyPath: dialogBox
       value: 
-      objectReference: {fileID: 1990400434}
+      objectReference: {fileID: 2072444853}
     - target: {fileID: 2982374956584992772, guid: acf4808c6cd5c4e4eb5fedd1565c6e15,
         type: 3}
       propertyPath: dialogText
       value: 
-      objectReference: {fileID: 975330749}
+      objectReference: {fileID: 1629110949}
     - target: {fileID: 2982374956584992772, guid: acf4808c6cd5c4e4eb5fedd1565c6e15,
         type: 3}
       propertyPath: journalManager
@@ -64620,22 +64673,22 @@ PrefabInstance:
         type: 3}
       propertyPath: nameBox
       value: 
-      objectReference: {fileID: 1278592502}
+      objectReference: {fileID: 408976554}
     - target: {fileID: 7006341776443319772, guid: de3ed324e1976e2419f31c30b75cf38a,
         type: 3}
       propertyPath: nameText
       value: 
-      objectReference: {fileID: 1278592501}
+      objectReference: {fileID: 1819051}
     - target: {fileID: 7006341776443319772, guid: de3ed324e1976e2419f31c30b75cf38a,
         type: 3}
       propertyPath: dialogBox
       value: 
-      objectReference: {fileID: 1990400434}
+      objectReference: {fileID: 2072444853}
     - target: {fileID: 7006341776443319772, guid: de3ed324e1976e2419f31c30b75cf38a,
         type: 3}
       propertyPath: dialogText
       value: 
-      objectReference: {fileID: 975330749}
+      objectReference: {fileID: 1629110949}
     - target: {fileID: 7006341776443319772, guid: de3ed324e1976e2419f31c30b75cf38a,
         type: 3}
       propertyPath: journalManager
@@ -80987,6 +81040,18 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 644248905}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1629110949 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 2237530959799979953, guid: 58bd2b2c2e11b5d4b8416edb1dcde9f5,
+    type: 3}
+  m_PrefabInstance: {fileID: 1278592500}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1641960994
 GameObject:
   m_ObjectHideFlags: 0
@@ -81227,7 +81292,7 @@ PrefabInstance:
         type: 3}
       propertyPath: dialogBox
       value: 
-      objectReference: {fileID: 1990400434}
+      objectReference: {fileID: 0}
     - target: {fileID: 4088229037160773237, guid: 692a4b0a70227cc48ae021f57f9a56fd,
         type: 3}
       propertyPath: m_Enabled
@@ -81237,7 +81302,7 @@ PrefabInstance:
         type: 3}
       propertyPath: dialogText
       value: 
-      objectReference: {fileID: 975330749}
+      objectReference: {fileID: 0}
     - target: {fileID: 4088229037160773237, guid: 692a4b0a70227cc48ae021f57f9a56fd,
         type: 3}
       propertyPath: journalManager
@@ -81539,22 +81604,22 @@ PrefabInstance:
         type: 3}
       propertyPath: nameBox
       value: 
-      objectReference: {fileID: 1278592502}
+      objectReference: {fileID: 408976554}
     - target: {fileID: 4088229037160773237, guid: 692a4b0a70227cc48ae021f57f9a56fd,
         type: 3}
       propertyPath: nameText
       value: 
-      objectReference: {fileID: 1278592501}
+      objectReference: {fileID: 1819051}
     - target: {fileID: 4088229037160773237, guid: 692a4b0a70227cc48ae021f57f9a56fd,
         type: 3}
       propertyPath: dialogBox
       value: 
-      objectReference: {fileID: 1990400434}
+      objectReference: {fileID: 2072444853}
     - target: {fileID: 4088229037160773237, guid: 692a4b0a70227cc48ae021f57f9a56fd,
         type: 3}
       propertyPath: dialogText
       value: 
-      objectReference: {fileID: 975330749}
+      objectReference: {fileID: 1629110949}
     - target: {fileID: 4088229037160773237, guid: 692a4b0a70227cc48ae021f57f9a56fd,
         type: 3}
       propertyPath: journalManager
@@ -81750,7 +81815,7 @@ PrefabInstance:
         type: 3}
       propertyPath: dialogBox
       value: 
-      objectReference: {fileID: 1990400434}
+      objectReference: {fileID: 0}
     - target: {fileID: 7006341776443319772, guid: de3ed324e1976e2419f31c30b75cf38a,
         type: 3}
       propertyPath: m_Enabled
@@ -81760,7 +81825,7 @@ PrefabInstance:
         type: 3}
       propertyPath: dialogText
       value: 
-      objectReference: {fileID: 975330749}
+      objectReference: {fileID: 0}
     - target: {fileID: 7006341776443319772, guid: de3ed324e1976e2419f31c30b75cf38a,
         type: 3}
       propertyPath: journalManager
@@ -81832,12 +81897,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!1 &1990400434 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 2237530960905552471, guid: 58bd2b2c2e11b5d4b8416edb1dcde9f5,
-    type: 3}
-  m_PrefabInstance: {fileID: 1278592500}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &2058008720
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -81922,6 +81981,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ec9e12882977563418b3560381cc2a1e, type: 3}
+--- !u!1 &2072444853 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1353980478394003178, guid: 58bd2b2c2e11b5d4b8416edb1dcde9f5,
+    type: 3}
+  m_PrefabInstance: {fileID: 1278592500}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &2116844692
 GameObject:
   m_ObjectHideFlags: 0
