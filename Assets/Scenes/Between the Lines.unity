@@ -1853,11 +1853,11 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: cad21bbe617c9e341af823cdc1dec0e1, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 28c28e3074629dc4289f9f78a2faea32, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 0.8
   m_Pitch: 1
-  Loop: 0
+  Loop: 1
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
@@ -7143,8 +7143,185 @@ Transform:
   - {fileID: 210506504}
   - {fileID: 403584076}
   m_Father: {fileID: 0}
-  m_RootOrder: 10
+  m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &1107508158
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 4708114126786124227, guid: 0a059a8f8be2efe48bc25269b2b96c94,
+        type: 3}
+      propertyPath: m_Name
+      value: Tutorial
+      objectReference: {fileID: 0}
+    - target: {fileID: 4708114126786124287, guid: 0a059a8f8be2efe48bc25269b2b96c94,
+        type: 3}
+      propertyPath: m_Pivot.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4708114126786124287, guid: 0a059a8f8be2efe48bc25269b2b96c94,
+        type: 3}
+      propertyPath: m_Pivot.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4708114126786124287, guid: 0a059a8f8be2efe48bc25269b2b96c94,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 4708114126786124287, guid: 0a059a8f8be2efe48bc25269b2b96c94,
+        type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4708114126786124287, guid: 0a059a8f8be2efe48bc25269b2b96c94,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4708114126786124287, guid: 0a059a8f8be2efe48bc25269b2b96c94,
+        type: 3}
+      propertyPath: m_AnchorMin.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4708114126786124287, guid: 0a059a8f8be2efe48bc25269b2b96c94,
+        type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4708114126786124287, guid: 0a059a8f8be2efe48bc25269b2b96c94,
+        type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4708114126786124287, guid: 0a059a8f8be2efe48bc25269b2b96c94,
+        type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4708114126786124287, guid: 0a059a8f8be2efe48bc25269b2b96c94,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4708114126786124287, guid: 0a059a8f8be2efe48bc25269b2b96c94,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4708114126786124287, guid: 0a059a8f8be2efe48bc25269b2b96c94,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4708114126786124287, guid: 0a059a8f8be2efe48bc25269b2b96c94,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4708114126786124287, guid: 0a059a8f8be2efe48bc25269b2b96c94,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4708114126786124287, guid: 0a059a8f8be2efe48bc25269b2b96c94,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4708114126786124287, guid: 0a059a8f8be2efe48bc25269b2b96c94,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4708114126786124287, guid: 0a059a8f8be2efe48bc25269b2b96c94,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4708114126786124287, guid: 0a059a8f8be2efe48bc25269b2b96c94,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4708114126786124287, guid: 0a059a8f8be2efe48bc25269b2b96c94,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4708114126786124287, guid: 0a059a8f8be2efe48bc25269b2b96c94,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4708114126786124287, guid: 0a059a8f8be2efe48bc25269b2b96c94,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4708114126834004855, guid: 0a059a8f8be2efe48bc25269b2b96c94,
+        type: 3}
+      propertyPath: sentences.Array.size
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 4708114126834004855, guid: 0a059a8f8be2efe48bc25269b2b96c94,
+        type: 3}
+      propertyPath: sentences.Array.data[0]
+      value: "The king\u2019s sacred sword is missing. Stolen from the royal vault,
+        it vanished without a trace \u2014 and the thief is still somewhere in town."
+      objectReference: {fileID: 0}
+    - target: {fileID: 4708114126834004855, guid: 0a059a8f8be2efe48bc25269b2b96c94,
+        type: 3}
+      propertyPath: sentences.Array.data[1]
+      value: 'As the royal investigator, you must question the townsfolk, gather
+        clues, and record your findings.  '
+      objectReference: {fileID: 0}
+    - target: {fileID: 4708114126834004855, guid: 0a059a8f8be2efe48bc25269b2b96c94,
+        type: 3}
+      propertyPath: sentences.Array.data[2]
+      value: "When the time comes, you\u2019ll make your final choice: accuse the
+        one you believe is guilty.  "
+      objectReference: {fileID: 0}
+    - target: {fileID: 4708114126834004855, guid: 0a059a8f8be2efe48bc25269b2b96c94,
+        type: 3}
+      propertyPath: sentences.Array.data[3]
+      value: Choose wisely. The truth is buried between the lines.
+      objectReference: {fileID: 0}
+    - target: {fileID: 4708114126834004855, guid: 0a059a8f8be2efe48bc25269b2b96c94,
+        type: 3}
+      propertyPath: sentences.Array.data[4]
+      value: '                              Move           WASD'
+      objectReference: {fileID: 0}
+    - target: {fileID: 4708114126834004855, guid: 0a059a8f8be2efe48bc25269b2b96c94,
+        type: 3}
+      propertyPath: sentences.Array.data[5]
+      value: '                              Interact       E'
+      objectReference: {fileID: 0}
+    - target: {fileID: 4708114126834004855, guid: 0a059a8f8be2efe48bc25269b2b96c94,
+        type: 3}
+      propertyPath: sentences.Array.data[6]
+      value: '                            Open Journal     J'
+      objectReference: {fileID: 0}
+    - target: {fileID: 4708114127588349486, guid: 0a059a8f8be2efe48bc25269b2b96c94,
+        type: 3}
+      propertyPath: m_Color.b
+      value: 0.3537736
+      objectReference: {fileID: 0}
+    - target: {fileID: 4708114127588349486, guid: 0a059a8f8be2efe48bc25269b2b96c94,
+        type: 3}
+      propertyPath: m_Color.g
+      value: 0.4716981
+      objectReference: {fileID: 0}
+    - target: {fileID: 4708114127588349486, guid: 0a059a8f8be2efe48bc25269b2b96c94,
+        type: 3}
+      propertyPath: m_Color.r
+      value: 0.39844948
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 0a059a8f8be2efe48bc25269b2b96c94, type: 3}
 --- !u!1001 &1137878232
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -64669,6 +64846,12 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7006341776443319763, guid: de3ed324e1976e2419f31c30b75cf38a,
+        type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: -8546380792000556003, guid: 1cbba760933726240a53150673e705f1,
+        type: 3}
     - target: {fileID: 7006341776443319772, guid: de3ed324e1976e2419f31c30b75cf38a,
         type: 3}
       propertyPath: nameBox
@@ -81204,7 +81387,7 @@ RectTransform:
   m_Children:
   - {fileID: 1943290137}
   m_Father: {fileID: 0}
-  m_RootOrder: 12
+  m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -82025,5 +82208,5 @@ Transform:
   - {fileID: 983543613}
   - {fileID: 473222351}
   m_Father: {fileID: 0}
-  m_RootOrder: 11
+  m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}

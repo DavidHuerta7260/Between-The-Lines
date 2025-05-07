@@ -1,0 +1,60 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &5709506966934032190
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 5709506966934032188}
+  - component: {fileID: 5709506966934032189}
+  m_Layer: 0
+  m_Name: Dialog Manager intro
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &5709506966934032188
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5709506966934032190}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 64.74731, y: -81.665085, z: -54.961315}
+  m_LocalScale: {x: 0.41666663, y: 0.41666663, z: 0.41666663}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &5709506966934032189
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5709506966934032190}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7e440195d9a7dce469409f2548c32620, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  textbox: {fileID: 0}
+  sentences:
+  - Be the last player to survive or get blown up by your foe
+  - Throw your bombs and evade your opponent's
+  - Your health goes down each time your hit by an expolsion. It's all over if it
+    hits zero!
+  - '                              Move                                    Player
+    1: WASD - Player 2: IDJK'
+  - '                              Jump                                     Player
+    1: Space - Player 2: Slash (/)'
+  - '                         Hold/Throw Bomb                                    
+    Player 1: Left Shift - Player 2: Right Shift'
+  typingSpeed: 0.01
+  continueButton: {fileID: 0}
+  dialogPanel: {fileID: 0}
