@@ -23,7 +23,15 @@ public class NPCDialogue : MonoBehaviour
     public string journalEntry;
     private bool hasAddedToJournal = false;
 
+    [Header("Accusation")]
+    public bool isCorrectAccused = false;
+
     private bool playerInRange = false;
+
+    public Prompter prompter;
+
+    private bool isAccused = false;  
+
 
     void Update()
     {
@@ -46,6 +54,11 @@ public class NPCDialogue : MonoBehaviour
                 EndDialog();
             }
         }
+        if (playerInRange && gameObject.CompareTag("Accusation") && Input.GetKeyDown(KeyCode.Y))
+        {
+            AccuseNPC();
+        }
+
     }
 
     void StartDialog()
@@ -62,6 +75,7 @@ public class NPCDialogue : MonoBehaviour
         {
             journalManager.AddEntry(journalEntry);
             hasAddedToJournal = true;
+            prompter.jounalInc();
         }
     }
 
@@ -104,5 +118,36 @@ public class NPCDialogue : MonoBehaviour
             EndDialog();
         }
     }
+
+    void AccuseNPC()
+    {
+
+        if (isAccused) return;
+        isAccused = true;
+
+
+        dialogText.text = $"{nameText.text} has been accused!";
+        if (isCorrectAccused) {
+            dialogText.text += "\nYou accused correctly. Justice has been served!";
+            Application.Quit();
+        }
+        else
+        {
+            dialogText.text += "\nThat was incorrect. The real culprit is still out there.";
+            Application.Quit();
+
+        }
+
+        dialogActive = false;
+
+
+
+  
+       // if (nameText.text == "John") {
+            
+        //}
+
+    }
+ 
 }
 
