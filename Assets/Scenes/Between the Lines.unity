@@ -2284,6 +2284,13 @@ PrefabInstance:
       objectReference: {fileID: 1629110949}
     - target: {fileID: 7870953461983454306, guid: 75a4ca3c19e334f4795c4acf8aea02ee,
         type: 3}
+      propertyPath: journalEntry
+      value: "Jim suspects the theft was planned and not random. He points out that
+        Jane could\u2019ve been unknowingly exploited. He doesn\u2019t trust John\u2019s
+        friendly act.\n\n"
+      objectReference: {fileID: 0}
+    - target: {fileID: 7870953461983454306, guid: 75a4ca3c19e334f4795c4acf8aea02ee,
+        type: 3}
       propertyPath: journalManager
       value: 
       objectReference: {fileID: 1824340809}
@@ -2297,6 +2304,36 @@ PrefabInstance:
       propertyPath: nameLines.Array.data[0]
       value: Jim
       objectReference: {fileID: 0}
+    - target: {fileID: 7870953461983454306, guid: 75a4ca3c19e334f4795c4acf8aea02ee,
+        type: 3}
+      propertyPath: dialogueLines.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 7870953461983454306, guid: 75a4ca3c19e334f4795c4acf8aea02ee,
+        type: 3}
+      propertyPath: dialogueLines.Array.data[0]
+      value: "Don\u2019t be fooled. This wasn\u2019t just some random theft. Whoever
+        took that sword knew what they were doing \u2014 and how to avoid being caught."
+      objectReference: {fileID: 0}
+    - target: {fileID: 7870953461983454306, guid: 75a4ca3c19e334f4795c4acf8aea02ee,
+        type: 3}
+      propertyPath: dialogueLines.Array.data[1]
+      value: "Jane\u2019s loyal. Always has been. But even loyal people have blind
+        spots. If I were a thief, I wouldn\u2019t break into the vault. I\u2019d
+        use someone who could walk right in."
+      objectReference: {fileID: 0}
+    - target: {fileID: 7870953461983454306, guid: 75a4ca3c19e334f4795c4acf8aea02ee,
+        type: 3}
+      propertyPath: dialogueLines.Array.data[2]
+      value: "John... he\u2019s too smooth. Always says the right thing, but never
+        the whole thing. I\u2019ve seen him around, asking innocent questions like
+        he\u2019s just curious. Curious about things most folks don\u2019t care about."
+      objectReference: {fileID: 0}
+    - target: {fileID: 7870953461983454306, guid: 75a4ca3c19e334f4795c4acf8aea02ee,
+        type: 3}
+      propertyPath: dialogueLines.Array.data[3]
+      value: "Just... be careful who you trust. A smile doesn\u2019t mean clean hands."
+      objectReference: {fileID: 0}
     - target: {fileID: 7870953461983454309, guid: 75a4ca3c19e334f4795c4acf8aea02ee,
         type: 3}
       propertyPath: m_RootOrder
@@ -2305,12 +2342,12 @@ PrefabInstance:
     - target: {fileID: 7870953461983454309, guid: 75a4ca3c19e334f4795c4acf8aea02ee,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -45.1
+      value: -47.57
       objectReference: {fileID: 0}
     - target: {fileID: 7870953461983454309, guid: 75a4ca3c19e334f4795c4acf8aea02ee,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 37.5
+      value: 49.76
       objectReference: {fileID: 0}
     - target: {fileID: 7870953461983454309, guid: 75a4ca3c19e334f4795c4acf8aea02ee,
         type: 3}
@@ -2787,12 +2824,12 @@ PrefabInstance:
     - target: {fileID: 2150181875637048165, guid: 4b51d0f4444e6ae43814bfd4ea2219bf,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -38.1
+      value: -81.622
       objectReference: {fileID: 0}
     - target: {fileID: 2150181875637048165, guid: 4b51d0f4444e6ae43814bfd4ea2219bf,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -3.1
+      value: 5.418
       objectReference: {fileID: 0}
     - target: {fileID: 2150181875637048165, guid: 4b51d0f4444e6ae43814bfd4ea2219bf,
         type: 3}
@@ -2856,6 +2893,13 @@ PrefabInstance:
       objectReference: {fileID: 1629110949}
     - target: {fileID: 2150181875637048166, guid: 4b51d0f4444e6ae43814bfd4ea2219bf,
         type: 3}
+      propertyPath: journalEntry
+      value: "John says he\u2019s been keeping to himself but recently visited Jane.
+        He didn\u2019t offer much detail about his movements. Friendly on the surface,
+        but something feels guarded."
+      objectReference: {fileID: 0}
+    - target: {fileID: 2150181875637048166, guid: 4b51d0f4444e6ae43814bfd4ea2219bf,
+        type: 3}
       propertyPath: journalManager
       value: 
       objectReference: {fileID: 1824340809}
@@ -2868,6 +2912,44 @@ PrefabInstance:
         type: 3}
       propertyPath: nameLines.Array.data[0]
       value: John
+      objectReference: {fileID: 0}
+    - target: {fileID: 2150181875637048166, guid: 4b51d0f4444e6ae43814bfd4ea2219bf,
+        type: 3}
+      propertyPath: dialogueLines.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 2150181875637048166, guid: 4b51d0f4444e6ae43814bfd4ea2219bf,
+        type: 3}
+      propertyPath: dialogueLines.Array.data[0]
+      value: "Oh, the king\u2019s sword? That\u2019s\u2026 unsettling. I can\u2019t
+        imagine who would do such a thing. Everyone\u2019s so tense now. I\u2019ve
+        just been laying low, y\u2019know? Reading, walking the market, visiting
+        some friends."
+      objectReference: {fileID: 0}
+    - target: {fileID: 2150181875637048166, guid: 4b51d0f4444e6ae43814bfd4ea2219bf,
+        type: 3}
+      propertyPath: dialogueLines.Array.data[1]
+      value: "I did stop by Jane\u2019s place recently. We go way back \u2014 nothing
+        unusual. Just a short visit, catching up. She always seems so focused. Probably
+        the most trustworthy person I know"
+      objectReference: {fileID: 0}
+    - target: {fileID: 2150181875637048166, guid: 4b51d0f4444e6ae43814bfd4ea2219bf,
+        type: 3}
+      propertyPath: dialogueLines.Array.data[2]
+      value: "The palace always felt like a place far above people like me. I mean,
+        I\u2019ve never even been inside! Not that I\u2019d want to. Too many eyes
+        watching you all the time."
+      objectReference: {fileID: 0}
+    - target: {fileID: 2150181875637048166, guid: 4b51d0f4444e6ae43814bfd4ea2219bf,
+        type: 3}
+      propertyPath: dialogueLines.Array.data[3]
+      value: "Anyway\u2026 I hope they figure it out soon. I don\u2019t like how
+        folks are starting to look at each other sideways."
+      objectReference: {fileID: 0}
+    - target: {fileID: 2150181875637048166, guid: 4b51d0f4444e6ae43814bfd4ea2219bf,
+        type: 3}
+      propertyPath: dialogueLines.Array.data[4]
+      value: Are you there?
       objectReference: {fileID: 0}
     - target: {fileID: 2150181875637048186, guid: 4b51d0f4444e6ae43814bfd4ea2219bf,
         type: 3}
@@ -7157,6 +7239,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Tutorial
       objectReference: {fileID: 0}
+    - target: {fileID: 4708114126786124227, guid: 0a059a8f8be2efe48bc25269b2b96c94,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4708114126786124287, guid: 0a059a8f8be2efe48bc25269b2b96c94,
         type: 3}
       propertyPath: m_Pivot.x
@@ -7334,6 +7421,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Journal
       objectReference: {fileID: 0}
+    - target: {fileID: 6246977582926113368, guid: 0d7a7cf23dc23104d9834c0588db68be,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6246977582926113371, guid: 0d7a7cf23dc23104d9834c0588db68be,
         type: 3}
       propertyPath: m_Pivot.x
@@ -7439,10 +7531,115 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6246977583081635940, guid: 0d7a7cf23dc23104d9834c0588db68be,
+        type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 819.0852
+      objectReference: {fileID: 0}
+    - target: {fileID: 6246977583081635940, guid: 0d7a7cf23dc23104d9834c0588db68be,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -67.3846
+      objectReference: {fileID: 0}
     - target: {fileID: 6246977583081635942, guid: 0d7a7cf23dc23104d9834c0588db68be,
         type: 3}
       propertyPath: m_Color.a
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6246977583410095263, guid: 0d7a7cf23dc23104d9834c0588db68be,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6246977583472745759, guid: 0d7a7cf23dc23104d9834c0588db68be,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6246977583472745759, guid: 0d7a7cf23dc23104d9834c0588db68be,
+        type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6246977583596137539, guid: 0d7a7cf23dc23104d9834c0588db68be,
+        type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6246977583596137539, guid: 0d7a7cf23dc23104d9834c0588db68be,
+        type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6246977583788022552, guid: 0d7a7cf23dc23104d9834c0588db68be,
+        type: 3}
+      propertyPath: m_fontSize
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 6246977583788022552, guid: 0d7a7cf23dc23104d9834c0588db68be,
+        type: 3}
+      propertyPath: m_fontSizeBase
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 6246977584519062372, guid: 0d7a7cf23dc23104d9834c0588db68be,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -0.00006735325
+      objectReference: {fileID: 0}
+    - target: {fileID: 6246977584519062372, guid: 0d7a7cf23dc23104d9834c0588db68be,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -0.00016736984
+      objectReference: {fileID: 0}
+    - target: {fileID: 6246977584632302822, guid: 0d7a7cf23dc23104d9834c0588db68be,
+        type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6246977584632302822, guid: 0d7a7cf23dc23104d9834c0588db68be,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6246977584632302822, guid: 0d7a7cf23dc23104d9834c0588db68be,
+        type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6246977584632302822, guid: 0d7a7cf23dc23104d9834c0588db68be,
+        type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6246977584816489593, guid: 0d7a7cf23dc23104d9834c0588db68be,
+        type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6246977584816489593, guid: 0d7a7cf23dc23104d9834c0588db68be,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6246977584816489593, guid: 0d7a7cf23dc23104d9834c0588db68be,
+        type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6246977584900674369, guid: 0d7a7cf23dc23104d9834c0588db68be,
+        type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6246977584900674369, guid: 0d7a7cf23dc23104d9834c0588db68be,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6246977584900674369, guid: 0d7a7cf23dc23104d9834c0588db68be,
+        type: 3}
+      propertyPath: m_AnchorMin.x
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0d7a7cf23dc23104d9834c0588db68be, type: 3}
@@ -25707,6 +25904,12 @@ PrefabInstance:
       objectReference: {fileID: 1629110949}
     - target: {fileID: 2982374956584992772, guid: acf4808c6cd5c4e4eb5fedd1565c6e15,
         type: 3}
+      propertyPath: journalEntry
+      value: "Jorge says he worked in the gardens all day. He saw John near the palace
+        but nothing suspicious. He\u2019s quiet, but confident in what he saw.\n\n"
+      objectReference: {fileID: 0}
+    - target: {fileID: 2982374956584992772, guid: acf4808c6cd5c4e4eb5fedd1565c6e15,
+        type: 3}
       propertyPath: journalManager
       value: 
       objectReference: {fileID: 1824340809}
@@ -25719,6 +25922,37 @@ PrefabInstance:
         type: 3}
       propertyPath: nameLines.Array.data[0]
       value: Jorge
+      objectReference: {fileID: 0}
+    - target: {fileID: 2982374956584992772, guid: acf4808c6cd5c4e4eb5fedd1565c6e15,
+        type: 3}
+      propertyPath: dialogueLines.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 2982374956584992772, guid: acf4808c6cd5c4e4eb5fedd1565c6e15,
+        type: 3}
+      propertyPath: dialogueLines.Array.data[0]
+      value: "I don\u2019t speak much with the townspeople. I prefer the quiet of
+        the gardens. It\u2019s easier to think when the world\u2019s not buzzing
+        around you."
+      objectReference: {fileID: 0}
+    - target: {fileID: 2982374956584992772, guid: acf4808c6cd5c4e4eb5fedd1565c6e15,
+        type: 3}
+      propertyPath: dialogueLines.Array.data[1]
+      value: "That morning, I was tending the ivy near the outer walls. I saw John
+        pass by. He didn\u2019t look out of place, but\u2026 he seemed focused. Intent,
+        maybe. No one else really stood out to me."
+      objectReference: {fileID: 0}
+    - target: {fileID: 2982374956584992772, guid: acf4808c6cd5c4e4eb5fedd1565c6e15,
+        type: 3}
+      propertyPath: dialogueLines.Array.data[2]
+      value: "I didn\u2019t go near the palace. I know my place. But from a distance,
+        everything looked calm."
+      objectReference: {fileID: 0}
+    - target: {fileID: 2982374956584992772, guid: acf4808c6cd5c4e4eb5fedd1565c6e15,
+        type: 3}
+      propertyPath: dialogueLines.Array.data[3]
+      value: "I can\u2019t offer much more than that. But I know what I saw, and
+        I don\u2019t forget faces."
       objectReference: {fileID: 0}
     - target: {fileID: 2982374956584992775, guid: acf4808c6cd5c4e4eb5fedd1565c6e15,
         type: 3}
@@ -64874,6 +65108,16 @@ PrefabInstance:
       objectReference: {fileID: 1629110949}
     - target: {fileID: 7006341776443319772, guid: de3ed324e1976e2419f31c30b75cf38a,
         type: 3}
+      propertyPath: journalEntry
+      value: 'Jane was on duty before the theft and noticed nothing unusual. She
+        confirms John visited her that day. She seems unsure and feels responsible
+        somehow.
+
+
+'
+      objectReference: {fileID: 0}
+    - target: {fileID: 7006341776443319772, guid: de3ed324e1976e2419f31c30b75cf38a,
+        type: 3}
       propertyPath: journalManager
       value: 
       objectReference: {fileID: 1824340809}
@@ -64886,6 +65130,37 @@ PrefabInstance:
         type: 3}
       propertyPath: nameLines.Array.data[0]
       value: Jane
+      objectReference: {fileID: 0}
+    - target: {fileID: 7006341776443319772, guid: de3ed324e1976e2419f31c30b75cf38a,
+        type: 3}
+      propertyPath: dialogueLines.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 7006341776443319772, guid: de3ed324e1976e2419f31c30b75cf38a,
+        type: 3}
+      propertyPath: dialogueLines.Array.data[0]
+      value: "This whole situation is a nightmare. I was on duty the night before
+        the theft, and everything seemed normal. No alarms, no disturbances. Then
+        suddenly\u2026 gone."
+      objectReference: {fileID: 0}
+    - target: {fileID: 7006341776443319772, guid: de3ed324e1976e2419f31c30b75cf38a,
+        type: 3}
+      propertyPath: dialogueLines.Array.data[1]
+      value: "I\u2019ve been going over my routine in my head. I can\u2019t figure
+        out where things went wrong. I didn\u2019t notice anything out of place \u2014
+        no missing keys, no forced entries. It makes no sense."
+      objectReference: {fileID: 0}
+    - target: {fileID: 7006341776443319772, guid: de3ed324e1976e2419f31c30b75cf38a,
+        type: 3}
+      propertyPath: dialogueLines.Array.data[2]
+      value: "John did drop by earlier that day. He\u2019s a good friend \u2014 harmless,
+        really. He didn\u2019t stay long. Just chatting, catching up."
+      objectReference: {fileID: 0}
+    - target: {fileID: 7006341776443319772, guid: de3ed324e1976e2419f31c30b75cf38a,
+        type: 3}
+      propertyPath: dialogueLines.Array.data[3]
+      value: "I feel\u2026 responsible. If someone used me to get in, it means I
+        failed my duty without even realizing it."
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: de3ed324e1976e2419f31c30b75cf38a, type: 3}
@@ -81731,12 +82006,12 @@ PrefabInstance:
     - target: {fileID: 4088229037160773232, guid: 692a4b0a70227cc48ae021f57f9a56fd,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -8
+      value: -27.44
       objectReference: {fileID: 0}
     - target: {fileID: 4088229037160773232, guid: 692a4b0a70227cc48ae021f57f9a56fd,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 30.5
+      value: 73.637
       objectReference: {fileID: 0}
     - target: {fileID: 4088229037160773232, guid: 692a4b0a70227cc48ae021f57f9a56fd,
         type: 3}
@@ -81805,6 +82080,12 @@ PrefabInstance:
       objectReference: {fileID: 1629110949}
     - target: {fileID: 4088229037160773237, guid: 692a4b0a70227cc48ae021f57f9a56fd,
         type: 3}
+      propertyPath: journalEntry
+      value: Joe is full of observations and theories. He saw John and Jane chatting
+        earlier in the week. Thinks someone close to the vault may have been used.
+      objectReference: {fileID: 0}
+    - target: {fileID: 4088229037160773237, guid: 692a4b0a70227cc48ae021f57f9a56fd,
+        type: 3}
       propertyPath: journalManager
       value: 
       objectReference: {fileID: 1824340809}
@@ -81817,6 +82098,37 @@ PrefabInstance:
         type: 3}
       propertyPath: nameLines.Array.data[0]
       value: Joe
+      objectReference: {fileID: 0}
+    - target: {fileID: 4088229037160773237, guid: 692a4b0a70227cc48ae021f57f9a56fd,
+        type: 3}
+      propertyPath: dialogueLines.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 4088229037160773237, guid: 692a4b0a70227cc48ae021f57f9a56fd,
+        type: 3}
+      propertyPath: dialogueLines.Array.data[0]
+      value: "You ever notice how quiet the town's been since the sword went missing?
+        It\u2019s like everyone\u2019s waiting for something to break."
+      objectReference: {fileID: 0}
+    - target: {fileID: 4088229037160773237, guid: 692a4b0a70227cc48ae021f57f9a56fd,
+        type: 3}
+      propertyPath: dialogueLines.Array.data[1]
+      value: "I\u2019ve talked to a lot of folks. Jane\u2019s been pacing nonstop
+        \u2014 she\u2019s clearly shaken. And John? Always smiling, but never really
+        says where he\u2019s been."
+      objectReference: {fileID: 0}
+    - target: {fileID: 4088229037160773237, guid: 692a4b0a70227cc48ae021f57f9a56fd,
+        type: 3}
+      propertyPath: dialogueLines.Array.data[2]
+      value: "People think just because someone\u2019s friendly, they\u2019re innocent.
+        But I always say, look at the details. Who\u2019s got access? Who knows someone
+        who does? That\u2019s where your answers are."
+      objectReference: {fileID: 0}
+    - target: {fileID: 4088229037160773237, guid: 692a4b0a70227cc48ae021f57f9a56fd,
+        type: 3}
+      propertyPath: dialogueLines.Array.data[3]
+      value: "If you ask me, we\u2019ve all got little pieces of the truth. You just
+        gotta stitch \u2018em together."
       objectReference: {fileID: 0}
     - target: {fileID: 4347718278883248904, guid: 692a4b0a70227cc48ae021f57f9a56fd,
         type: 3}
