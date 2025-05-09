@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using TMPro;
+using System.Runtime.InteropServices.WindowsRuntime;
 
 public class NPCDialogue : MonoBehaviour
 {
@@ -26,19 +27,59 @@ public class NPCDialogue : MonoBehaviour
     [Header("Accusation")]
     public bool isCorrectAccused = false;
 
+    [Header("Decision")]
+    public bool isDecision = false;
+
     private bool playerInRange = false;
 
     public Prompter prompter;
 
-    private bool isAccused = false;  
+    private bool isAccused = false;
 
+    private bool waitingDecision = false;
+
+
+
+    //for use so that the player can teleport themselves if they reject the initial prompt to
+    public bool teloChecker = false;
 
     void Update()
     {
         if (playerInRange)
         {
+            getDecision();
+            if (playerInRange && gameObject.CompareTag("Decision") && Input.GetKeyDown(KeyCode.Y) && teloChecker == true)
+           {
+                if (gameObject.name == "Decision Box")
+                {
+                    prompter.teleportPlayer();
+                }
+                if (gameObject.name == "ReturnBox")
+                {
+                    prompter.teleportPlayer2();
+                }
+        
+
+
+                /* if (Input.GetKeyDown(KeyCode.Y))
+                {
+                    dialogText.text += "Attention Town's people, I know who the culprit is!";
+                    EndDialog();
+                    prompter.teleportPlayer();
+                    waitingDecision = false;
+                }
+                else
+                {
+                    dialogText.text += "No, it's still to early to call it. I can't act rashly now, I've got to be certain I know.";
+                    EndDialog();
+                    waitingDecision = false;
+                }*/
+
+
+            }
             if (Input.GetKeyDown(KeyCode.E))
             {
+               
                 if (!dialogActive)
                 {
                     StartDialog();
@@ -46,6 +87,7 @@ public class NPCDialogue : MonoBehaviour
                 else
                 {
                     ContinueDialog();
+
                 }
             }
 
@@ -58,6 +100,7 @@ public class NPCDialogue : MonoBehaviour
         {
             AccuseNPC();
         }
+        
 
     }
 
@@ -82,17 +125,34 @@ public class NPCDialogue : MonoBehaviour
     void ContinueDialog()
     {
         currentLineIndex++;
+        ///Debug.Log($"Continuing dialogue: index now {currentLineIndex}/{dialogueLines.Length}");
+        //
 
         if (currentLineIndex < dialogueLines.Length)
         {
             dialogText.text = dialogueLines[currentLineIndex];
             nameText.text = nameLines[0];
+
+           
         }
+
         else
         {
-            EndDialog();
+            if (gameObject.CompareTag("Decision"))
+            {
+                //currentLineIndex[3];
+                dialogText.text += "\nDo you want to announce your decision? (Y/N)";
+                waitingDecision = true;
+            }
+            else
+            {
+                EndDialog();
+            }
+            } 
         }
-    }
+        
+        
+    
 
     void EndDialog()
     {
@@ -140,14 +200,40 @@ public class NPCDialogue : MonoBehaviour
 
         dialogActive = false;
 
-
-
-  
-       // if (nameText.text == "John") {
-            
-        //}
+        
 
     }
- 
+    //sets setdecision to true, this is so that that the player cannot
+    //teleport themselves early
+    public void setDecision() {
+        teloChecker = true;
+        
+    }
+
+    bool getDecision() {
+        return teloChecker;
+    }
+   /* void DecisionTelo()
+    {
+        if (isDecision) return;
+        isDecision = true;
+
+
+
+        if (isDecision)
+        {
+            
+
+        }
+    }*/
+
+
+
+    // if (nameText.text == "John") {
+
+    //}
+
 }
+ 
+
 

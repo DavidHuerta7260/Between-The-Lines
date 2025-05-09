@@ -3,7 +3,19 @@ guid: 6abc10e61cb8f864682f7762e49bbf7a
 MonoImporter:
   externalObjects: {}
   serializedVersion: 2
-  defaultReferences: []
+  defaultReferences:
+  - player: {instanceID: 0}
+  - teleportTarget: {instanceID: 0}
+  - prompterBox: {instanceID: 0}
+  - prompterContent: {instanceID: 0}
+  - hider: {instanceID: 0}
+  - npcDialogue: {instanceID: 0}
+  - DecisionSpawn1prefab: {instanceID: 0}
+  - DecisionSpawn2prefab: {instanceID: 0}
+  - DecisionArea1: {fileID: 3155513336793793558, guid: 57d22454477649e499b421c528eda02e,
+      type: 3}
+  - DecisionArea2: {fileID: 5867621272943479198, guid: 2f4e1516172d9ef45aa6e59b516b9707,
+      type: 3}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 

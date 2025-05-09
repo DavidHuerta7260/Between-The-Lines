@@ -8,22 +8,34 @@ public class Prompter : MonoBehaviour
 {
     public PlayerController player;
     public Transform teleportTarget;
+
+    public Transform teleportTarget2;
     // this is for when the player has made 5 journal entries then the player
     //will be prompted if they want to go ahead with the trial
     public GameObject prompterBox;
     public TextMeshProUGUI prompterContent;
 
     public string[] prompterLines;
-    private int currentLineIndex = 0;
+  //  private int currentLineIndex = 0;
     private bool prompterActive = false;
     private bool hasPrompted = false;
-    
+
+    public GameObject hider;
+
+    public NPCDialogue npcDialogue;
+
+    public Transform DecisionSpawn1prefab;
+    public Transform DecisionSpawn2prefab;
+
+    public GameObject DecisionArea1;
+    public GameObject DecisionArea2;
 
     //public NPCDialogue npcDialogue;
 
-    bool reject = false;
+    //bool reject = false;
     static int factor = 0;
 
+    private bool decisionAreaSpawned;
     //waiting time for the player gives player time to talk to final npc and
     //time to think on their own
     public float delay = 30f;
@@ -47,17 +59,34 @@ public class Prompter : MonoBehaviour
         {
             if (Input.GetKeyDown(KeyCode.Y))
             {
-                prompterContent.text = "good";
-                teleportPlayer();
+                //teleportPlayer();
+                player.transform.position = teleportTarget.position;
                 EndPrompter();
 
             }
             if (Input.GetKeyDown(KeyCode.N))
             {
-                prompterContent.text = "bad";
+                prompterContent.text = "When you're ready go back to the center of town and press Y. again.";
+               // npcDialogue.setDecision();
                 EndPrompter();
+
+                //spawn points for decision boxes on level 1 and level 2
+                if (!decisionAreaSpawned)
+                {
+
+                    DecisionArea1.transform.position = DecisionSpawn1prefab.position;
+                    DecisionArea2.transform.position = DecisionSpawn2prefab.position;
+
+                   // Instantiate(DecisionArea2, DecisionSpawn2prefab.transform.position, Quaternion.identity);
+                    decisionAreaSpawned = true;
+                }
+
             }
-       
+            if (Input.GetKeyDown(KeyCode.Y))
+            {
+                teleportPlayer();
+            }
+
         }
         if (factor == 10 && !hasPrompted)
         {
@@ -113,12 +142,30 @@ public class Prompter : MonoBehaviour
     }
     ///// void teleport() { 
 
-    void teleportPlayer() {
+    public void teleportPlayer() {
         player.enabled = false;
 
-        player.transform.position = teleportTarget.position;
+            player.transform.position = teleportTarget.position;
+        
+       
+
         player.enabled = true;
     }
 
+    public void teleportPlayer2()
+    {
+        player.enabled = false;
+
+            player.transform.position = teleportTarget2.position;
+    
+
+        player.enabled = true;
+    }
+
+    //this will spawn a black object infront of the camera and will obscure the player's and scene as
+    //the player is teleported, will dissapear not to long after
+    public void fadeTo() { 
+    
+    }
     /// }
 }
