@@ -47,6 +47,21 @@ public class NPCDialogue : MonoBehaviour
     {
         if (playerInRange)
         {
+<<<<<<< HEAD
+            //getDecision();
+            //if (playerInRange && gameObject.CompareTag("Decision") && Input.GetKeyDown(KeyCode.Y) && teloChecker == true)
+           //{
+                //prompter.teleportPlayer();
+
+                //if (gameObject.name == "Decision Box")
+                //{
+                  //  prompter.teleportPlayer();
+                //}
+                //if (gameObject.name == "ReturnBox")
+                //{
+                //    prompter.teleportPlayer2();
+              //  }
+=======
             getDecision();
             if (playerInRange && gameObject.CompareTag("Decision") && Input.GetKeyDown(KeyCode.Y) && teloChecker == true)
            {
@@ -58,6 +73,7 @@ public class NPCDialogue : MonoBehaviour
                 {
                     prompter.teleportPlayer2();
                 }
+>>>>>>> 0250bc7af660a530fd35b742772c81007335123f
         
 
 
@@ -76,7 +92,11 @@ public class NPCDialogue : MonoBehaviour
                 }*/
 
 
+<<<<<<< HEAD
+            //}
+=======
             }
+>>>>>>> 0250bc7af660a530fd35b742772c81007335123f
             if (Input.GetKeyDown(KeyCode.E))
             {
                
@@ -114,12 +134,12 @@ public class NPCDialogue : MonoBehaviour
         nameBox.SetActive(true);
         nameText.text = nameLines[currentLineIndex];
 
-        if (journalManager != null && !hasAddedToJournal && !string.IsNullOrWhiteSpace(journalEntry))
-        {
-            journalManager.AddEntry(journalEntry);
-            hasAddedToJournal = true;
-            prompter.jounalInc();
-        }
+     //  if (journalManager != null && !hasAddedToJournal && !string.IsNullOrWhiteSpace(journalEntry))
+     //   {
+     //       journalManager.AddEntry(journalEntry);
+     //       hasAddedToJournal = true;
+            //prompter.jounalInc();
+      //  }
     }
 
     void ContinueDialog()
@@ -138,6 +158,22 @@ public class NPCDialogue : MonoBehaviour
 
         else
         {
+<<<<<<< HEAD
+            //if(gameObject.CompareTag("Decision"))
+            //{
+            //currentLineIndex[3];
+            //dialogText.text += "\nDo you want to announce your decision? (Y/N)";
+            //  waitingDecision = true;
+            //  }
+            //  else
+            //  {
+          //  if (journalManager != null && !hasAddedToJournal && !string.IsNullOrWhiteSpace(journalEntry))
+          //  {
+           //     prompter.jounalInc();
+           // }
+            EndDialog();
+            //}
+=======
             if (gameObject.CompareTag("Decision"))
             {
                 //currentLineIndex[3];
@@ -148,18 +184,35 @@ public class NPCDialogue : MonoBehaviour
             {
                 EndDialog();
             }
+>>>>>>> 0250bc7af660a530fd35b742772c81007335123f
             } 
         }
         
         
     
 
-    void EndDialog()
+    public void EndDialog()
     {
+        if(journalManager != null && !hasAddedToJournal && !string.IsNullOrWhiteSpace(journalEntry))
+        {
+            journalManager.AddEntry(journalEntry);
+            hasAddedToJournal = true;
+
+            if (journalManager.entryCount >= 5 && !prompter.hasPrompted) {
+                prompter.StartPrompter();
+                prompter.hasPrompted = true;
+            }
+           
+           // prompter.jounalInc();
+        }
         dialogBox.SetActive(false);
         dialogActive = false;
         nameBox.SetActive(false);
         nameActive = false;
+
+        
+       
+
     }
 
     private void OnTriggerEnter2D(Collider2D other)
@@ -205,6 +258,16 @@ public class NPCDialogue : MonoBehaviour
     }
     //sets setdecision to true, this is so that that the player cannot
     //teleport themselves early
+<<<<<<< HEAD
+   // public void setDecision() {
+   //     teloChecker = true;
+        
+  //  }
+
+  //  bool getDecision() {
+   //     return teloChecker;
+   // }
+=======
     public void setDecision() {
         teloChecker = true;
         
@@ -213,6 +276,7 @@ public class NPCDialogue : MonoBehaviour
     bool getDecision() {
         return teloChecker;
     }
+>>>>>>> 0250bc7af660a530fd35b742772c81007335123f
    /* void DecisionTelo()
     {
         if (isDecision) return;

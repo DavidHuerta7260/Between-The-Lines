@@ -11,6 +11,9 @@ public class JournalManager : MonoBehaviour
     private List<string> entries = new List<string>();
     private bool isOpen = false;
 
+    public int entryCount = 0;
+
+    public Prompter prompter;
     void Update()
     {
         if (Input.GetKeyDown(KeyCode.J))
@@ -29,6 +32,15 @@ public class JournalManager : MonoBehaviour
     {
         entries.Add(entry);
         RefreshJournal();
+
+        if (!string.IsNullOrWhiteSpace(entry))
+        {
+            entryCount++;
+            if (prompter != null)
+            {
+                prompter.jounalInc();  // Increment the journal entry count in Prompter
+            }
+        }
 
         if (journalNotification != null)
             journalNotification.SetActive(true); // Show the notification

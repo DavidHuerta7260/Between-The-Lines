@@ -18,9 +18,15 @@ public class Prompter : MonoBehaviour
     public string[] prompterLines;
   //  private int currentLineIndex = 0;
     private bool prompterActive = false;
+<<<<<<< HEAD
+    public bool hasPrompted = false;
+
+    public Teleporter teleporter;
+=======
     private bool hasPrompted = false;
 
     public GameObject hider;
+>>>>>>> 0250bc7af660a530fd35b742772c81007335123f
 
     public NPCDialogue npcDialogue;
 
@@ -29,11 +35,21 @@ public class Prompter : MonoBehaviour
 
     public GameObject DecisionArea1;
     public GameObject DecisionArea2;
+<<<<<<< HEAD
+
+    public int jEntryCount = 0;
+    //public int lastSusp = 0
+=======
+>>>>>>> 0250bc7af660a530fd35b742772c81007335123f
 
     //public NPCDialogue npcDialogue;
 
     //bool reject = false;
+<<<<<<< HEAD
+    static int factor = -1;
+=======
     static int factor = 0;
+>>>>>>> 0250bc7af660a530fd35b742772c81007335123f
 
     private bool decisionAreaSpawned;
     //waiting time for the player gives player time to talk to final npc and
@@ -51,15 +67,15 @@ public class Prompter : MonoBehaviour
         //takes the journalInc for npc dialogue
 
 
-        if (factor == 5 && !hasPrompted) {
-            hasPrompted=true;
-            StartCoroutine(PromptAfterDelay());
-        }
         if (prompterActive)
         {
             if (Input.GetKeyDown(KeyCode.Y))
             {
+<<<<<<< HEAD
+
+=======
                 //teleportPlayer();
+>>>>>>> 0250bc7af660a530fd35b742772c81007335123f
                 player.transform.position = teleportTarget.position;
                 EndPrompter();
 
@@ -67,6 +83,8 @@ public class Prompter : MonoBehaviour
             if (Input.GetKeyDown(KeyCode.N))
             {
                 prompterContent.text = "When you're ready go back to the center of town and press Y. again.";
+<<<<<<< HEAD
+=======
                // npcDialogue.setDecision();
                 EndPrompter();
 
@@ -93,39 +111,57 @@ public class Prompter : MonoBehaviour
             hasPrompted = true;
             StartCoroutine(PromptAfterDelay());
         }
+>>>>>>> 0250bc7af660a530fd35b742772c81007335123f
 
+                EndPrompter();     
+
+            }
+            if (Input.GetKeyDown(KeyCode.Y))
+            {
+                teleportPlayer();
+            }
+
+        }
+//if (factor == 10 && !hasPrompted)
+     //   {
+//hasPrompted = true;
+     //       StartCoroutine(PromptAfterDelay());
+     //   }
+    ///
     }
 
-    void StartPrompter() {
+    public void StartPrompter() {
         prompterBox.SetActive(true);
-
-        if (factor == 5) {
+   
             prompterContent.text = "It seems we have enought evidence to procced with the Trial? \nYes or No \n(On the Keyboard Hit Y for yes and N for no)";
-        }
-       // if (factor == 10)
-       // {
-        //    prompterContent.text = "I suspect the cultprit is!";
-       // }
+ 
+
+
+     
         prompterActive =true;
 
         
-        // currentLineIndex = 0;
-        //prompterActive = true;
-        //   prompterBox.SetActive(true);
-        // prompterContent.text = prompterLines[currentLineIndex];
+     
     }
 
     void EndPrompter()
     {
         prompterActive = false;
-        StartCoroutine(HidePrompterAfterDelay(2f));
+       StartCoroutine(HidePrompterAfterDelay(2f));
 
         
- 
+
     }
 
     public void jounalInc() {
-        factor++;   
+        factor++;
+
+
+        if (jEntryCount == 5 && !hasPrompted) {
+            StartPrompter();
+            hasPrompted = true;
+        
+        }
     }
 
     IEnumerator HidePrompterAfterDelay(float seconds)
@@ -140,7 +176,7 @@ public class Prompter : MonoBehaviour
         yield return new WaitForSeconds(delay);
         StartPrompter();
     }
-    ///// void teleport() { 
+  
 
     public void teleportPlayer() {
         player.enabled = false;
@@ -164,8 +200,13 @@ public class Prompter : MonoBehaviour
 
     //this will spawn a black object infront of the camera and will obscure the player's and scene as
     //the player is teleported, will dissapear not to long after
+<<<<<<< HEAD
+     }
+
+=======
     public void fadeTo() { 
     
     }
     /// }
 }
+>>>>>>> 0250bc7af660a530fd35b742772c81007335123f
