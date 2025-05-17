@@ -1585,7 +1585,6 @@ PrefabInstance:
     - target: {fileID: 4852666787472843592, guid: 622e40105590e114cbf4e0de7fbb4f7b,
         type: 3}
       propertyPath: moveSpeed
-      value: 3.5
       objectReference: {fileID: 0}
     - target: {fileID: 4852666787472843595, guid: 622e40105590e114cbf4e0de7fbb4f7b,
         type: 3}
@@ -2557,7 +2556,11 @@ PrefabInstance:
     - target: {fileID: 4708114126786124227, guid: 0a059a8f8be2efe48bc25269b2b96c94,
         type: 3}
       propertyPath: m_IsActive
+<<<<<<< HEAD
       value: 0
+=======
+      value: 1
+>>>>>>> parent of 0250bc7 (Extended Dialogue and Tutorial)
       objectReference: {fileID: 0}
     - target: {fileID: 4708114126786124287, guid: 0a059a8f8be2efe48bc25269b2b96c94,
         type: 3}
@@ -4405,6 +4408,7 @@ MonoBehaviour:
   player: {fileID: 1914541810}
   teleportTarget: {fileID: 114444553}
 <<<<<<< HEAD
+<<<<<<< HEAD
   teleportTarget2: {fileID: 3620373632645232369}
 =======
   teleportTarget2: {fileID: 0}
@@ -4436,19 +4440,50 @@ MonoBehaviour:
   jEntryCount: 0
   delay: 1
 =======
+=======
+<<<<<<< HEAD
+>>>>>>> parent of 0250bc7 (Extended Dialogue and Tutorial)
   teleportTarget2: {fileID: 0}
+=======
+  teleportTarget2: {fileID: 3620373632645232369}
+>>>>>>> c9e73a5aeb9fb3c5479b515f3e7febf8b7e71756
+=======
+  teleportTarget2: {fileID: 3620373632645232369}
+>>>>>>> c9e73a5aeb9fb3c5479b515f3e7febf8b7e71756
   prompterBox: {fileID: 2072444853}
   prompterContent: {fileID: 1629110949}
   prompterLines: []
   hider: {fileID: 0}
   npcDialogue: {fileID: 0}
+<<<<<<< HEAD
 >>>>>>> Stashed changes
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> parent of 0250bc7 (Extended Dialogue and Tutorial)
   DecisionSpawn1prefab: {fileID: 0}
   DecisionSpawn2prefab: {fileID: 0}
   DecisionArea1: {fileID: 0}
   DecisionArea2: {fileID: 0}
   delay: 15
+<<<<<<< HEAD
 >>>>>>> 0250bc7af660a530fd35b742772c81007335123f
+=======
+=======
+=======
+>>>>>>> c9e73a5aeb9fb3c5479b515f3e7febf8b7e71756
+  DecisionSpawn1prefab: {fileID: 3620373632645232369}
+  DecisionSpawn2prefab: {fileID: 989459103824190308}
+  DecisionArea1: {fileID: 3155513336793793558, guid: 57d22454477649e499b421c528eda02e,
+    type: 3}
+  DecisionArea2: {fileID: 5867621272943479198, guid: 2f4e1516172d9ef45aa6e59b516b9707,
+    type: 3}
+  delay: 5
+<<<<<<< HEAD
+>>>>>>> c9e73a5aeb9fb3c5479b515f3e7febf8b7e71756
+=======
+>>>>>>> c9e73a5aeb9fb3c5479b515f3e7febf8b7e71756
+>>>>>>> parent of 0250bc7 (Extended Dialogue and Tutorial)
 --- !u!1001 &1941082117
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5233,6 +5268,7 @@ PrefabInstance:
       objectReference: {fileID: 1629110949}
     - target: {fileID: 467938051591288837, guid: 5b391fc6a6d40d844b64f135d31dc634,
         type: 3}
+<<<<<<< HEAD
       propertyPath: m_Size.x
       value: 1.1789398
       objectReference: {fileID: 0}
@@ -5253,6 +5289,8 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 467938051591288837, guid: 5b391fc6a6d40d844b64f135d31dc634,
         type: 3}
+=======
+>>>>>>> parent of 0250bc7 (Extended Dialogue and Tutorial)
       propertyPath: m_SpriteTilingProperty.oldSize.x
       value: 0.46875
       objectReference: {fileID: 0}
@@ -5264,12 +5302,20 @@ PrefabInstance:
     - target: {fileID: 467938051591288841, guid: 5b391fc6a6d40d844b64f135d31dc634,
         type: 3}
       propertyPath: m_LocalPosition.x
+<<<<<<< HEAD
       value: 110.79
+=======
+      value: -25.66
+>>>>>>> parent of 0250bc7 (Extended Dialogue and Tutorial)
       objectReference: {fileID: 0}
     - target: {fileID: 467938051591288841, guid: 5b391fc6a6d40d844b64f135d31dc634,
         type: 3}
       propertyPath: m_LocalPosition.y
+<<<<<<< HEAD
       value: 47.945
+=======
+      value: 25.81
+>>>>>>> parent of 0250bc7 (Extended Dialogue and Tutorial)
       objectReference: {fileID: 0}
     - target: {fileID: 467938051591288843, guid: 5b391fc6a6d40d844b64f135d31dc634,
         type: 3}
@@ -5280,11 +5326,16 @@ PrefabInstance:
     - target: {fileID: 756266003952983296, guid: 5b391fc6a6d40d844b64f135d31dc634,
         type: 3}
       propertyPath: m_LocalPosition.x
+<<<<<<< HEAD
       value: 122.79
+=======
+      value: -24.29
+>>>>>>> parent of 0250bc7 (Extended Dialogue and Tutorial)
       objectReference: {fileID: 0}
     - target: {fileID: 756266003952983296, guid: 5b391fc6a6d40d844b64f135d31dc634,
         type: 3}
       propertyPath: m_LocalPosition.y
+<<<<<<< HEAD
       value: 47.93
       objectReference: {fileID: 0}
     - target: {fileID: 756266003952983300, guid: 5b391fc6a6d40d844b64f135d31dc634,
@@ -5306,6 +5357,9 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Offset.y
       value: -1.1941795
+=======
+      value: 25.83
+>>>>>>> parent of 0250bc7 (Extended Dialogue and Tutorial)
       objectReference: {fileID: 0}
     - target: {fileID: 756266003952983303, guid: 5b391fc6a6d40d844b64f135d31dc634,
         type: 3}
@@ -5360,11 +5414,16 @@ PrefabInstance:
     - target: {fileID: 5631315568536163650, guid: 5b391fc6a6d40d844b64f135d31dc634,
         type: 3}
       propertyPath: m_LocalPosition.x
+<<<<<<< HEAD
       value: 118.81
+=======
+      value: -21.74
+>>>>>>> parent of 0250bc7 (Extended Dialogue and Tutorial)
       objectReference: {fileID: 0}
     - target: {fileID: 5631315568536163650, guid: 5b391fc6a6d40d844b64f135d31dc634,
         type: 3}
       propertyPath: m_LocalPosition.y
+<<<<<<< HEAD
       value: 47.91
       objectReference: {fileID: 0}
     - target: {fileID: 5631315568536163678, guid: 5b391fc6a6d40d844b64f135d31dc634,
@@ -5406,6 +5465,9 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Offset.y
       value: -1.2549
+=======
+      value: 25.95
+>>>>>>> parent of 0250bc7 (Extended Dialogue and Tutorial)
       objectReference: {fileID: 0}
     - target: {fileID: 6915764528909260947, guid: 5b391fc6a6d40d844b64f135d31dc634,
         type: 3}
@@ -5434,6 +5496,7 @@ PrefabInstance:
       objectReference: {fileID: 1629110949}
     - target: {fileID: 6915764528909260950, guid: 5b391fc6a6d40d844b64f135d31dc634,
         type: 3}
+<<<<<<< HEAD
       propertyPath: m_LocalPosition.x
       value: 114.81
       objectReference: {fileID: 0}
@@ -5441,6 +5504,10 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalPosition.y
       value: 47.93
+=======
+      propertyPath: m_LocalPosition.y
+      value: 25.93
+>>>>>>> parent of 0250bc7 (Extended Dialogue and Tutorial)
       objectReference: {fileID: 0}
     - target: {fileID: 7441623979374594656, guid: 5b391fc6a6d40d844b64f135d31dc634,
         type: 3}
@@ -5555,12 +5622,20 @@ PrefabInstance:
     - target: {fileID: 8832419317138202274, guid: 5b391fc6a6d40d844b64f135d31dc634,
         type: 3}
       propertyPath: m_LocalPosition.x
+<<<<<<< HEAD
       value: 106.783
+=======
+      value: -26.95
+>>>>>>> parent of 0250bc7 (Extended Dialogue and Tutorial)
       objectReference: {fileID: 0}
     - target: {fileID: 8832419317138202274, guid: 5b391fc6a6d40d844b64f135d31dc634,
         type: 3}
       propertyPath: m_LocalPosition.y
+<<<<<<< HEAD
       value: 47.92
+=======
+      value: 25.68
+>>>>>>> parent of 0250bc7 (Extended Dialogue and Tutorial)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5b391fc6a6d40d844b64f135d31dc634, type: 3}
@@ -5953,6 +6028,7 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 4706336167704144625}
   m_PrefabAsset: {fileID: 0}
+<<<<<<< HEAD
 --- !u!1001 &4123880882558740510
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6022,6 +6098,8 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fd2d6341fdf001a45aec9208817277a7, type: 3}
+=======
+>>>>>>> parent of 0250bc7 (Extended Dialogue and Tutorial)
 --- !u!1001 &4706336167704144625
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6091,6 +6169,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 631d1b3d53775404b9c9e1963ba15fd1, type: 3}
+<<<<<<< HEAD
 --- !u!1001 &5293991218371869267
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6728,3 +6807,5 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ee09e263cd771894b987221e91eff388, type: 3}
+=======
+>>>>>>> parent of 0250bc7 (Extended Dialogue and Tutorial)
