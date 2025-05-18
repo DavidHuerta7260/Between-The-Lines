@@ -1587,7 +1587,6 @@ PrefabInstance:
       propertyPath: moveSpeed
       value: 15
 <<<<<<< HEAD
-<<<<<<< HEAD
       objectReference: {fileID: 0}
     - target: {fileID: 4852666787472843595, guid: 622e40105590e114cbf4e0de7fbb4f7b,
         type: 3}
@@ -1603,8 +1602,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_SortingLayerID
       value: 0
-=======
->>>>>>> parent of 0250bc7 (Extended Dialogue and Tutorial)
 =======
 >>>>>>> parent of 0250bc7 (Extended Dialogue and Tutorial)
       objectReference: {fileID: 0}
@@ -2568,9 +2565,6 @@ PrefabInstance:
 =======
       value: 1
 <<<<<<< HEAD
-<<<<<<< HEAD
->>>>>>> parent of 0250bc7 (Extended Dialogue and Tutorial)
-=======
 >>>>>>> parent of 0250bc7 (Extended Dialogue and Tutorial)
 =======
 >>>>>>> parent of 0250bc7 (Extended Dialogue and Tutorial)
@@ -4423,7 +4417,6 @@ MonoBehaviour:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
-<<<<<<< HEAD
   teleportTarget2: {fileID: 3620373632645232369}
 =======
   teleportTarget2: {fileID: 0}
@@ -4463,9 +4456,6 @@ MonoBehaviour:
   teleportTarget2: {fileID: 0}
 >>>>>>> parent of 0250bc7 (Extended Dialogue and Tutorial)
 =======
-  teleportTarget2: {fileID: 0}
->>>>>>> parent of 0250bc7 (Extended Dialogue and Tutorial)
-=======
   teleportTarget2: {fileID: 3620373632645232369}
 >>>>>>> c9e73a5aeb9fb3c5479b515f3e7febf8b7e71756
 =======
@@ -4478,7 +4468,6 @@ MonoBehaviour:
   npcDialogue: {fileID: 0}
 <<<<<<< HEAD
 <<<<<<< HEAD
-<<<<<<< HEAD
 >>>>>>> Stashed changes
 =======
 <<<<<<< HEAD
@@ -4487,8 +4476,6 @@ MonoBehaviour:
 =======
 <<<<<<< HEAD
 >>>>>>> parent of 0250bc7 (Extended Dialogue and Tutorial)
-=======
->>>>>>> parent of 0250bc7 (Extended Dialogue and Tutorial)
   DecisionSpawn1prefab: {fileID: 0}
   DecisionSpawn2prefab: {fileID: 0}
   DecisionArea1: {fileID: 0}
@@ -4496,11 +4483,8 @@ MonoBehaviour:
   delay: 15
 <<<<<<< HEAD
 <<<<<<< HEAD
-<<<<<<< HEAD
 >>>>>>> 0250bc7af660a530fd35b742772c81007335123f
 =======
-=======
->>>>>>> parent of 0250bc7 (Extended Dialogue and Tutorial)
 =======
 >>>>>>> parent of 0250bc7 (Extended Dialogue and Tutorial)
 =======
@@ -4518,9 +4502,6 @@ MonoBehaviour:
 =======
 >>>>>>> c9e73a5aeb9fb3c5479b515f3e7febf8b7e71756
 <<<<<<< HEAD
-<<<<<<< HEAD
->>>>>>> parent of 0250bc7 (Extended Dialogue and Tutorial)
-=======
 >>>>>>> parent of 0250bc7 (Extended Dialogue and Tutorial)
 =======
 >>>>>>> parent of 0250bc7 (Extended Dialogue and Tutorial)
@@ -5310,7 +5291,6 @@ PrefabInstance:
         type: 3}
 <<<<<<< HEAD
 <<<<<<< HEAD
-<<<<<<< HEAD
       propertyPath: m_Size.x
       value: 1.1789398
       objectReference: {fileID: 0}
@@ -5335,8 +5315,6 @@ PrefabInstance:
 >>>>>>> parent of 0250bc7 (Extended Dialogue and Tutorial)
 =======
 >>>>>>> parent of 0250bc7 (Extended Dialogue and Tutorial)
-=======
->>>>>>> parent of 0250bc7 (Extended Dialogue and Tutorial)
       propertyPath: m_SpriteTilingProperty.oldSize.x
       value: 0.46875
       objectReference: {fileID: 0}
@@ -5350,11 +5328,7 @@ PrefabInstance:
       propertyPath: m_LocalPosition.x
 <<<<<<< HEAD
 <<<<<<< HEAD
-<<<<<<< HEAD
       value: 110.79
-=======
-      value: -25.66
->>>>>>> parent of 0250bc7 (Extended Dialogue and Tutorial)
 =======
       value: -25.66
 >>>>>>> parent of 0250bc7 (Extended Dialogue and Tutorial)
@@ -5367,11 +5341,7 @@ PrefabInstance:
       propertyPath: m_LocalPosition.y
 <<<<<<< HEAD
 <<<<<<< HEAD
-<<<<<<< HEAD
       value: 47.945
-=======
-      value: 25.81
->>>>>>> parent of 0250bc7 (Extended Dialogue and Tutorial)
 =======
       value: 25.81
 >>>>>>> parent of 0250bc7 (Extended Dialogue and Tutorial)
@@ -5390,11 +5360,7 @@ PrefabInstance:
       propertyPath: m_LocalPosition.x
 <<<<<<< HEAD
 <<<<<<< HEAD
-<<<<<<< HEAD
       value: 122.79
-=======
-      value: -24.29
->>>>>>> parent of 0250bc7 (Extended Dialogue and Tutorial)
 =======
       value: -24.29
 >>>>>>> parent of 0250bc7 (Extended Dialogue and Tutorial)
@@ -5405,7 +5371,6 @@ PrefabInstance:
     - target: {fileID: 756266003952983296, guid: 5b391fc6a6d40d844b64f135d31dc634,
         type: 3}
       propertyPath: m_LocalPosition.y
-<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
       value: 47.93
@@ -5435,9 +5400,6 @@ PrefabInstance:
 =======
       value: 25.83
 >>>>>>> parent of 0250bc7 (Extended Dialogue and Tutorial)
-=======
-      value: 25.83
->>>>>>> parent of 0250bc7 (Extended Dialogue and Tutorial)
       objectReference: {fileID: 0}
     - target: {fileID: 756266003952983303, guid: 5b391fc6a6d40d844b64f135d31dc634,
         type: 3}
@@ -5494,11 +5456,7 @@ PrefabInstance:
       propertyPath: m_LocalPosition.x
 <<<<<<< HEAD
 <<<<<<< HEAD
-<<<<<<< HEAD
       value: 118.81
-=======
-      value: -21.74
->>>>>>> parent of 0250bc7 (Extended Dialogue and Tutorial)
 =======
       value: -21.74
 >>>>>>> parent of 0250bc7 (Extended Dialogue and Tutorial)
@@ -5509,7 +5467,6 @@ PrefabInstance:
     - target: {fileID: 5631315568536163650, guid: 5b391fc6a6d40d844b64f135d31dc634,
         type: 3}
       propertyPath: m_LocalPosition.y
-<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
       value: 47.91
@@ -5559,9 +5516,6 @@ PrefabInstance:
 =======
       value: 25.95
 >>>>>>> parent of 0250bc7 (Extended Dialogue and Tutorial)
-=======
-      value: 25.95
->>>>>>> parent of 0250bc7 (Extended Dialogue and Tutorial)
       objectReference: {fileID: 0}
     - target: {fileID: 6915764528909260947, guid: 5b391fc6a6d40d844b64f135d31dc634,
         type: 3}
@@ -5592,7 +5546,6 @@ PrefabInstance:
         type: 3}
 <<<<<<< HEAD
 <<<<<<< HEAD
-<<<<<<< HEAD
       propertyPath: m_LocalPosition.x
       value: 114.81
       objectReference: {fileID: 0}
@@ -5600,10 +5553,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalPosition.y
       value: 47.93
-=======
-      propertyPath: m_LocalPosition.y
-      value: 25.93
->>>>>>> parent of 0250bc7 (Extended Dialogue and Tutorial)
 =======
       propertyPath: m_LocalPosition.y
       value: 25.93
@@ -5728,11 +5677,7 @@ PrefabInstance:
       propertyPath: m_LocalPosition.x
 <<<<<<< HEAD
 <<<<<<< HEAD
-<<<<<<< HEAD
       value: 106.783
-=======
-      value: -26.95
->>>>>>> parent of 0250bc7 (Extended Dialogue and Tutorial)
 =======
       value: -26.95
 >>>>>>> parent of 0250bc7 (Extended Dialogue and Tutorial)
@@ -5745,11 +5690,7 @@ PrefabInstance:
       propertyPath: m_LocalPosition.y
 <<<<<<< HEAD
 <<<<<<< HEAD
-<<<<<<< HEAD
       value: 47.92
-=======
-      value: 25.68
->>>>>>> parent of 0250bc7 (Extended Dialogue and Tutorial)
 =======
       value: 25.68
 >>>>>>> parent of 0250bc7 (Extended Dialogue and Tutorial)
@@ -6150,7 +6091,6 @@ Transform:
   m_PrefabAsset: {fileID: 0}
 <<<<<<< HEAD
 <<<<<<< HEAD
-<<<<<<< HEAD
 --- !u!1001 &4123880882558740510
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6224,8 +6164,6 @@ PrefabInstance:
 >>>>>>> parent of 0250bc7 (Extended Dialogue and Tutorial)
 =======
 >>>>>>> parent of 0250bc7 (Extended Dialogue and Tutorial)
-=======
->>>>>>> parent of 0250bc7 (Extended Dialogue and Tutorial)
 --- !u!1001 &4706336167704144625
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6295,7 +6233,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 631d1b3d53775404b9c9e1963ba15fd1, type: 3}
-<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 --- !u!1001 &5293991218371869267
@@ -6935,8 +6872,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ee09e263cd771894b987221e91eff388, type: 3}
-=======
->>>>>>> parent of 0250bc7 (Extended Dialogue and Tutorial)
 =======
 >>>>>>> parent of 0250bc7 (Extended Dialogue and Tutorial)
 =======
