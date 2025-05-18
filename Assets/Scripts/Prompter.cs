@@ -16,17 +16,17 @@ public class Prompter : MonoBehaviour
     public TextMeshProUGUI prompterContent;
 
     public string[] prompterLines;
-  //  private int currentLineIndex = 0;
+    //  private int currentLineIndex = 0;
     private bool prompterActive = false;
-<<<<<<< HEAD
+    //<<<<<<< HEAD
     public bool hasPrompted = false;
 
     public Teleporter teleporter;
-=======
-    private bool hasPrompted = false;
+    //=======
+   // private bool hasPrompted = false;
 
     public GameObject hider;
->>>>>>> 0250bc7af660a530fd35b742772c81007335123f
+    //>//>>>>>> 0250bc7af660a530fd35b742772c81007335123f
 
     public NPCDialogue npcDialogue;
 
@@ -35,21 +35,21 @@ public class Prompter : MonoBehaviour
 
     public GameObject DecisionArea1;
     public GameObject DecisionArea2;
-<<<<<<< HEAD
+    //<<<<<<< HEAD
 
     public int jEntryCount = 0;
     //public int lastSusp = 0
-=======
->>>>>>> 0250bc7af660a530fd35b742772c81007335123f
+    //=======
+    //>>>>>>> 0250bc7af660a530fd35b742772c81007335123f
 
     //public NPCDialogue npcDialogue;
 
     //bool reject = false;
-<<<<<<< HEAD
-    static int factor = -1;
-=======
+    //<<<<<<< HEAD
+    //static int factor = -1;
+    //=======
     static int factor = 0;
->>>>>>> 0250bc7af660a530fd35b742772c81007335123f
+    //>>>>>>> 0250bc7af660a530fd35b742772c81007335123f
 
     private bool decisionAreaSpawned;
     //waiting time for the player gives player time to talk to final npc and
@@ -58,7 +58,7 @@ public class Prompter : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+
     }
 
     // Update is called once per frame
@@ -71,11 +71,7 @@ public class Prompter : MonoBehaviour
         {
             if (Input.GetKeyDown(KeyCode.Y))
             {
-<<<<<<< HEAD
 
-=======
-                //teleportPlayer();
->>>>>>> 0250bc7af660a530fd35b742772c81007335123f
                 player.transform.position = teleportTarget.position;
                 EndPrompter();
 
@@ -83,9 +79,8 @@ public class Prompter : MonoBehaviour
             if (Input.GetKeyDown(KeyCode.N))
             {
                 prompterContent.text = "When you're ready go back to the center of town and press Y. again.";
-<<<<<<< HEAD
-=======
-               // npcDialogue.setDecision();
+
+                // npcDialogue.setDecision();
                 EndPrompter();
 
                 //spawn points for decision boxes on level 1 and level 2
@@ -95,7 +90,7 @@ public class Prompter : MonoBehaviour
                     DecisionArea1.transform.position = DecisionSpawn1prefab.position;
                     DecisionArea2.transform.position = DecisionSpawn2prefab.position;
 
-                   // Instantiate(DecisionArea2, DecisionSpawn2prefab.transform.position, Quaternion.identity);
+                    // Instantiate(DecisionArea2, DecisionSpawn2prefab.transform.position, Quaternion.identity);
                     decisionAreaSpawned = true;
                 }
 
@@ -106,61 +101,51 @@ public class Prompter : MonoBehaviour
             }
 
         }
-        if (factor == 10 && !hasPrompted)
+        EndPrompter();
+
+
+        if (Input.GetKeyDown(KeyCode.Y))
         {
-            hasPrompted = true;
-            StartCoroutine(PromptAfterDelay());
+            teleportPlayer();
         }
->>>>>>> 0250bc7af660a530fd35b742772c81007335123f
 
-                EndPrompter();     
-
-            }
-            if (Input.GetKeyDown(KeyCode.Y))
-            {
-                teleportPlayer();
-            }
-
-        }
-//if (factor == 10 && !hasPrompted)
-     //   {
-//hasPrompted = true;
-     //       StartCoroutine(PromptAfterDelay());
-     //   }
-    ///
     }
 
-    public void StartPrompter() {
+
+    public void StartPrompter()
+    {
         prompterBox.SetActive(true);
-   
-            prompterContent.text = "It seems we have enought evidence to procced with the Trial? \nYes or No \n(On the Keyboard Hit Y for yes and N for no)";
- 
+
+        prompterContent.text = "It seems we have enought evidence to procced with the Trial? \nYes or No \n(On the Keyboard Hit Y for yes and N for no)";
 
 
-     
-        prompterActive =true;
 
-        
-     
+
+        prompterActive = true;
+
+
+
     }
 
     void EndPrompter()
     {
         prompterActive = false;
-       StartCoroutine(HidePrompterAfterDelay(2f));
+        StartCoroutine(HidePrompterAfterDelay(2f));
 
-        
+
 
     }
 
-    public void jounalInc() {
+    public void jounalInc()
+    {
         factor++;
 
 
-        if (jEntryCount == 5 && !hasPrompted) {
+        if (jEntryCount == 5 && !hasPrompted)
+        {
             StartPrompter();
             hasPrompted = true;
-        
+
         }
     }
 
@@ -176,14 +161,15 @@ public class Prompter : MonoBehaviour
         yield return new WaitForSeconds(delay);
         StartPrompter();
     }
-  
 
-    public void teleportPlayer() {
+
+    public void teleportPlayer()
+    {
         player.enabled = false;
 
-            player.transform.position = teleportTarget.position;
-        
-       
+        player.transform.position = teleportTarget.position;
+
+
 
         player.enabled = true;
     }
@@ -192,21 +178,22 @@ public class Prompter : MonoBehaviour
     {
         player.enabled = false;
 
-            player.transform.position = teleportTarget2.position;
-    
+        player.transform.position = teleportTarget2.position;
+
 
         player.enabled = true;
     }
 
     //this will spawn a black object infront of the camera and will obscure the player's and scene as
     //the player is teleported, will dissapear not to long after
-<<<<<<< HEAD
-     }
+    //<<<<<<< HEAD
 
-=======
-    public void fadeTo() { 
-    
+
+    //=======
+    public void fadeTo()
+    {
+
     }
     /// }
 }
->>>>>>> 0250bc7af660a530fd35b742772c81007335123f
+//>>>>>>> 0250bc7af660a530fd35b742772c81007335123f

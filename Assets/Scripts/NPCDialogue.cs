@@ -36,7 +36,7 @@ public class NPCDialogue : MonoBehaviour
 
     private bool isAccused = false;
 
-    private bool waitingDecision = false;
+    //private bool waitingDecision = false;
 
 
 
@@ -47,7 +47,7 @@ public class NPCDialogue : MonoBehaviour
     {
         if (playerInRange)
         {
-<<<<<<< HEAD
+//<<<<<<< HEAD
             //getDecision();
             //if (playerInRange && gameObject.CompareTag("Decision") && Input.GetKeyDown(KeyCode.Y) && teloChecker == true)
            //{
@@ -61,7 +61,7 @@ public class NPCDialogue : MonoBehaviour
                 //{
                 //    prompter.teleportPlayer2();
               //  }
-=======
+///=======
             getDecision();
             if (playerInRange && gameObject.CompareTag("Decision") && Input.GetKeyDown(KeyCode.Y) && teloChecker == true)
            {
@@ -73,8 +73,8 @@ public class NPCDialogue : MonoBehaviour
                 {
                     prompter.teleportPlayer2();
                 }
->>>>>>> 0250bc7af660a530fd35b742772c81007335123f
-        
+//>>>>>>> 0250bc7af660a530fd35b742772c81007335123f
+ //       
 
 
                 /* if (Input.GetKeyDown(KeyCode.Y))
@@ -92,11 +92,11 @@ public class NPCDialogue : MonoBehaviour
                 }*/
 
 
-<<<<<<< HEAD
+//<<<<<<< HEAD
             //}
-=======
+//=======
             }
->>>>>>> 0250bc7af660a530fd35b742772c81007335123f
+//>>>>>>> 0250bc7af660a530fd35b742772c81007335123f
             if (Input.GetKeyDown(KeyCode.E))
             {
                
@@ -158,33 +158,9 @@ public class NPCDialogue : MonoBehaviour
 
         else
         {
-<<<<<<< HEAD
-            //if(gameObject.CompareTag("Decision"))
-            //{
-            //currentLineIndex[3];
-            //dialogText.text += "\nDo you want to announce your decision? (Y/N)";
-            //  waitingDecision = true;
-            //  }
-            //  else
-            //  {
-          //  if (journalManager != null && !hasAddedToJournal && !string.IsNullOrWhiteSpace(journalEntry))
-          //  {
-           //     prompter.jounalInc();
-           // }
+
             EndDialog();
-            //}
-=======
-            if (gameObject.CompareTag("Decision"))
-            {
-                //currentLineIndex[3];
-                dialogText.text += "\nDo you want to announce your decision? (Y/N)";
-                waitingDecision = true;
-            }
-            else
-            {
-                EndDialog();
-            }
->>>>>>> 0250bc7af660a530fd35b742772c81007335123f
+
             } 
         }
         
@@ -258,7 +234,7 @@ public class NPCDialogue : MonoBehaviour
     }
     //sets setdecision to true, this is so that that the player cannot
     //teleport themselves early
-<<<<<<< HEAD
+//<<<<<<< HEAD
    // public void setDecision() {
    //     teloChecker = true;
         
@@ -267,7 +243,7 @@ public class NPCDialogue : MonoBehaviour
   //  bool getDecision() {
    //     return teloChecker;
    // }
-=======
+//=======
     public void setDecision() {
         teloChecker = true;
         
@@ -276,7 +252,7 @@ public class NPCDialogue : MonoBehaviour
     bool getDecision() {
         return teloChecker;
     }
->>>>>>> 0250bc7af660a530fd35b742772c81007335123f
+//>>>>>>> 0250bc7af660a530fd35b742772c81007335123f
    /* void DecisionTelo()
     {
         if (isDecision) return;
