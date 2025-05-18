@@ -21,7 +21,6 @@ GameObject:
   m_IsActive: 1
 =======
   m_IsActive: 0
->>>>>>> 0250bc7af660a530fd35b742772c81007335123f
 --- !u!224 &2810912165072194551
 RectTransform:
   m_ObjectHideFlags: 0
