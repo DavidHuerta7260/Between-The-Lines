@@ -45,8 +45,7 @@ public class NPCDialogue : MonoBehaviour
     public Prompter prompter;
     public bool teloChecker = false; // for teleport trigger
 
-    private bool showRestartPrompt = false; 
-
+    private bool showRestartPrompt = false;
     private int currentLineIndex = 0;
 
     void Update()
@@ -102,6 +101,7 @@ public class NPCDialogue : MonoBehaviour
         {
             AccuseNPC();
         }
+
         if (showRestartPrompt && Input.GetKeyDown(KeyCode.R))
         {
             SceneManager.LoadScene("MainMenu");
@@ -113,22 +113,26 @@ public class NPCDialogue : MonoBehaviour
         dialogActive = true;
         dialogBox.SetActive(true);
         nameBox.SetActive(true);
+        nameActive = true;
         nameText.text = nameLines.Length > 0 ? nameLines[0] : gameObject.name;
 
         currentLineIndex = 0;
         dialogText.text = dialogueLines[currentLineIndex];
 
-      //  if (journalManager != null && !hasAddedToJournal && !string.IsNullOrWhiteSpace(journalEntry))
-//{
-           // journalManager.AddEntry(journalEntry);
-           // hasAddedToJournal = true;
+        if (journalManager != null && !hasAddedToJournal && !string.IsNullOrWhiteSpace(journalEntry))
+        {
+            journalManager.AddEntry(journalEntry);
+            hasAddedToJournal = true;
 
-          //  if (journalManager.entryCount >= 5 && !prompter.hasPrompted)
-          //  {
-         //       prompter.StartPrompter();
-           //     prompter.hasPrompted = true;
-          //  }
-        //}
+            prompter.jounalInc();
+
+            if (journalManager.entryCount >= 5 && !prompter.hasPrompted)
+            {
+                prompter.StartPrompter();
+                dialogText.text = "It seems we have enough evidence to proceed with the Trial? \nYes or No \n(On the Keyboard Hit Y for yes and N for no)";
+                prompter.hasPrompted = true;
+            }
+        }
     }
 
     void ContinueDialog()
@@ -148,20 +152,6 @@ public class NPCDialogue : MonoBehaviour
 
     public void EndDialog()
     {
-        if (journalManager != null && !hasAddedToJournal && !string.IsNullOrWhiteSpace(journalEntry))
-        {
-            journalManager.AddEntry(journalEntry);
-            hasAddedToJournal = true;
-
-            prompter.jounalInc();
-
-            if (journalManager.entryCount >= 5 && !prompter.hasPrompted)
-            {
-                prompter.StartPrompter();
-                dialogText.text = "It seems we have enough evidence to proceed with the Trial? \nYes or No \n(On the Keyboard Hit Y for yes and N for no)";
-                prompter.hasPrompted = true;
-            }
-        }
         dialogBox.SetActive(false);
         dialogActive = false;
         nameBox.SetActive(false);
@@ -183,7 +173,10 @@ public class NPCDialogue : MonoBehaviour
         if (other.CompareTag("Player"))
         {
             playerInRange = false;
-            EndDialog();
+            if (dialogActive)
+            {
+                EndDialog();
+            }
         }
     }
 
@@ -206,8 +199,6 @@ public class NPCDialogue : MonoBehaviour
             dialogText.text += "\nThat was incorrect. The real culprit is still out there.";
         }
 
-        //
-        // Application.Quit(); // Ends the game
         dialogText.text += "\n\nPress 'R' to return to the title screen.";
         dialogActive = false;
         showRestartPrompt = true;
