@@ -4869,6 +4869,11 @@ PrefabInstance:
       propertyPath: dialogText
       value: 
       objectReference: {fileID: 1214002950}
+    - target: {fileID: 8832419317138202273, guid: 5b391fc6a6d40d844b64f135d31dc634,
+        type: 3}
+      propertyPath: isCorrectAccused
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8832419317138202274, guid: 5b391fc6a6d40d844b64f135d31dc634,
         type: 3}
       propertyPath: m_LocalPosition.x
