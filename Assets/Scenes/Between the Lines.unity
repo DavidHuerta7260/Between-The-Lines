@@ -146,7 +146,7 @@ MonoBehaviour:
   nameBox: {fileID: 1264090459}
   nameText: {fileID: 579944824}
   dialogueLines:
-  - Looks like I haven't been on guard as of late.
+  - Haven't been on guard as of late.
   - I should've known something had gone missing. I oughta be on the lookout to make
     sure nobody loses anything else.
   nameLines:
