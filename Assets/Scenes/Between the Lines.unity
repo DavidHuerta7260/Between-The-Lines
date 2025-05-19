@@ -309,9 +309,9 @@ MonoBehaviour:
   nameBox: {fileID: 1264090459}
   nameText: {fileID: 579944824}
   dialogueLines:
-  - You know what I miss? The old bread vendor. Her rolls were always warm by sunrise.
-  - Not sure where she went. The square feels quieter without her.
-  - What were we talking about again?
+  - Missing sword? I haven't a clue in the world.
+  - You know, there's been a lot going on lately it's hard to pay attention to what
+    goes on around here.
   nameLines:
   - Luther
   questionPrompt: 
