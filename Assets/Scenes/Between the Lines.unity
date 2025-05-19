@@ -146,10 +146,9 @@ MonoBehaviour:
   nameBox: {fileID: 1264090459}
   nameText: {fileID: 579944824}
   dialogueLines:
-  - "I\u2019ve been fixing that broken fountain all morning. The thing keeps spraying
-    my boots."
-  - "Didn\u2019t even realize something had gone missing. Guess I should\u2019ve
-    looked up more."
+  - Haven't been on guard as of late.
+  - I should've known something had gone missing. I oughta be on the lookout to make
+    sure nobody loses anything else.
   nameLines:
   - Walter
   questionPrompt: 
