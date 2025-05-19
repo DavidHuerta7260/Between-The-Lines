@@ -4,55 +4,75 @@ using System.Collections.Generic;
 
 public class JournalManager : MonoBehaviour
 {
+    [Header("UI Elements")]
     public GameObject journalPanel;
+    public GameObject journalButton;
     public GameObject journalNotification;
-    public TextMeshProUGUI journalContent;
+    public TextMeshProUGUI journalText;
+
+    [Header("External References")]
+    public Prompter prompter;
 
     private List<string> entries = new List<string>();
     private bool isOpen = false;
-
     public int entryCount = 0;
 
-    public Prompter prompter;
     void Update()
     {
         if (Input.GetKeyDown(KeyCode.J))
         {
-            isOpen = !isOpen;
-            journalPanel.SetActive(isOpen);
+            ToggleJournal();
+        }
+    }
 
-            // Hide notification when opening journal
-            if (isOpen && journalNotification != null)
-                journalNotification.SetActive(false);
+    public void ToggleJournal()
+    {
+        isOpen = !isOpen;
+        journalPanel.SetActive(isOpen);
+
+        if (journalButton != null)
+        {
+            journalButton.SetActive(!isOpen);
         }
 
+        if (isOpen && journalNotification != null)
+        {
+            journalNotification.SetActive(false); // hide notification on open
+        }
     }
 
     public void AddEntry(string entry)
     {
+        if (string.IsNullOrWhiteSpace(entry)) return;
+
         entries.Add(entry);
+        entryCount++;
         RefreshJournal();
 
-        if (!string.IsNullOrWhiteSpace(entry))
+        if (!isOpen && journalNotification != null)
         {
-            entryCount++;
-            if (prompter != null)
-            {
-                prompter.jounalInc();  // Increment the journal entry count in Prompter
-            }
+            journalNotification.SetActive(true); // show notification only if journal is closed
         }
 
-        if (journalNotification != null)
-            journalNotification.SetActive(true); // Show the notification
+        if (prompter != null)
+        {
+            prompter.jounalInc(); // notify Prompter script of journal update
+        }
     }
 
-
-    void RefreshJournal()
+    public void ClearJournal()
     {
-        journalContent.text = "";
+        entries.Clear();
+        entryCount = 0;
+        journalText.text = "";
+    }
+
+    private void RefreshJournal()
+    {
+        journalText.text = "";
         foreach (string e in entries)
         {
-            journalContent.text += "• " + e + "\n\n";
+            journalText.text += "• " + e + "\n\n";
         }
     }
 }

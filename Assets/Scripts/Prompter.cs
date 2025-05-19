@@ -1,6 +1,5 @@
 using System.Collections;
 using System.Collections.Generic;
-using System.Drawing;
 using TMPro;
 using UnityEngine;
 
@@ -8,144 +7,91 @@ public class Prompter : MonoBehaviour
 {
     public PlayerController player;
     public Transform teleportTarget;
-
     public Transform teleportTarget2;
-    // this is for when the player has made 5 journal entries then the player
-    //will be prompted if they want to go ahead with the trial
+
     public GameObject prompterBox;
     public TextMeshProUGUI prompterContent;
-
     public string[] prompterLines;
-    //  private int currentLineIndex = 0;
+
     private bool prompterActive = false;
-    //<<<<<<< HEAD
     public bool hasPrompted = false;
 
     public Teleporter teleporter;
-    //=======
-   // private bool hasPrompted = false;
-
     public GameObject hider;
-    //>//>>>>>> 0250bc7af660a530fd35b742772c81007335123f
 
     public NPCDialogue npcDialogue;
 
     public Transform DecisionSpawn1prefab;
     public Transform DecisionSpawn2prefab;
-
     public GameObject DecisionArea1;
     public GameObject DecisionArea2;
-    //<<<<<<< HEAD
 
     public int jEntryCount = 0;
-    //public int lastSusp = 0
-    //=======
-    //>>>>>>> 0250bc7af660a530fd35b742772c81007335123f
 
-    //public NPCDialogue npcDialogue;
+    static int factor = -1;
 
-    //bool reject = false;
-    //<<<<<<< HEAD
-    //static int factor = -1;
-    //=======
-    static int factor = 0;
-    //>>>>>>> 0250bc7af660a530fd35b742772c81007335123f
-
-    private bool decisionAreaSpawned;
-    //waiting time for the player gives player time to talk to final npc and
-    //time to think on their own
+    private bool decisionAreaSpawned = false;
     public float delay = 30f;
-    // Start is called before the first frame update
-    void Start()
-    {
 
-    }
+    public JournalManager journalManager;
 
-    // Update is called once per frame
     void Update()
     {
-        //takes the journalInc for npc dialogue
-
-
         if (prompterActive)
         {
             if (Input.GetKeyDown(KeyCode.Y))
             {
-
-                player.transform.position = teleportTarget.position;
+                teleportPlayer();
                 EndPrompter();
-
             }
+
             if (Input.GetKeyDown(KeyCode.N))
             {
-                prompterContent.text = "When you're ready go back to the center of town and press Y. again.";
-
-                // npcDialogue.setDecision();
+                prompterContent.text = "When you're ready go back to the center of town and press Y again.";
                 EndPrompter();
 
-                //spawn points for decision boxes on level 1 and level 2
                 if (!decisionAreaSpawned)
                 {
-
                     DecisionArea1.transform.position = DecisionSpawn1prefab.position;
                     DecisionArea2.transform.position = DecisionSpawn2prefab.position;
-
-                    // Instantiate(DecisionArea2, DecisionSpawn2prefab.transform.position, Quaternion.identity);
                     decisionAreaSpawned = true;
                 }
-
             }
-            if (Input.GetKeyDown(KeyCode.Y))
-            {
-                teleportPlayer();
-            }
-
         }
-        EndPrompter();
 
-
-        if (Input.GetKeyDown(KeyCode.Y))
+        if (factor == 10 && !hasPrompted)
         {
-            teleportPlayer();
+            hasPrompted = true;
+            StartCoroutine(PromptAfterDelay());
         }
-
     }
-
 
     public void StartPrompter()
     {
         prompterBox.SetActive(true);
-
-        prompterContent.text = "It seems we have enought evidence to procced with the Trial? \nYes or No \n(On the Keyboard Hit Y for yes and N for no)";
-
-
-
-
+        prompterContent.text = "It seems we have enough evidence to proceed with the Trial? \nYes or No \n(On the Keyboard Hit Y for yes and N for no)";
         prompterActive = true;
-
-
-
     }
 
     void EndPrompter()
     {
         prompterActive = false;
         StartCoroutine(HidePrompterAfterDelay(2f));
-
-
-
     }
 
     public void jounalInc()
     {
         factor++;
 
-
         if (jEntryCount == 5 && !hasPrompted)
         {
             StartPrompter();
             hasPrompted = true;
 
+            if (journalManager != null && journalManager.journalButton != null)
+            {
+                journalManager.journalButton.SetActive(true);
+            }
         }
     }
 
@@ -155,45 +101,28 @@ public class Prompter : MonoBehaviour
         prompterBox.SetActive(false);
     }
 
-
     IEnumerator PromptAfterDelay()
     {
         yield return new WaitForSeconds(delay);
         StartPrompter();
     }
 
-
     public void teleportPlayer()
     {
         player.enabled = false;
-
         player.transform.position = teleportTarget.position;
-
-
-
         player.enabled = true;
     }
 
     public void teleportPlayer2()
     {
         player.enabled = false;
-
         player.transform.position = teleportTarget2.position;
-
-
         player.enabled = true;
     }
 
-    //this will spawn a black object infront of the camera and will obscure the player's and scene as
-    //the player is teleported, will dissapear not to long after
-    //<<<<<<< HEAD
-
-
-    //=======
     public void fadeTo()
     {
-
+        // Placeholder for fade effect logic
     }
-    /// }
 }
-//>>>>>>> 0250bc7af660a530fd35b742772c81007335123f

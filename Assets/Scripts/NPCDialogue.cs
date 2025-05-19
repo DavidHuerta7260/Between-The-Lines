@@ -1,6 +1,5 @@
 ﻿using UnityEngine;
 using TMPro;
-using System.Runtime.InteropServices.WindowsRuntime;
 
 public class NPCDialogue : MonoBehaviour
 {
@@ -13,10 +12,15 @@ public class NPCDialogue : MonoBehaviour
     [Header("Dialog Content")]
     [TextArea]
     public string[] dialogueLines;
-    private int currentLineIndex = 0;
-    private bool dialogActive = false;
     public string[] nameLines;
-    private bool nameActive = false;
+    [TextArea]
+    public string questionPrompt;
+    [TextArea]
+    public string response1;
+    [TextArea]
+    public string response2;
+    [TextArea]
+    public string response3;
 
     [Header("Journal")]
     public JournalManager journalManager;
@@ -31,164 +35,118 @@ public class NPCDialogue : MonoBehaviour
     public bool isDecision = false;
 
     private bool playerInRange = false;
+    private bool dialogActive = false;
+    private bool nameActive = false;
+    private bool isAccused = false;
+    private bool awaitingQuestion = false;
+    private bool waitingDecision = false;
 
     public Prompter prompter;
+    public bool teloChecker = false; // for teleport trigger
 
-    private bool isAccused = false;
-
-    //private bool waitingDecision = false;
-
-
-
-    //for use so that the player can teleport themselves if they reject the initial prompt to
-    public bool teloChecker = false;
+    private int currentLineIndex = 0;
 
     void Update()
     {
         if (playerInRange)
         {
-//<<<<<<< HEAD
-            //getDecision();
-            //if (playerInRange && gameObject.CompareTag("Decision") && Input.GetKeyDown(KeyCode.Y) && teloChecker == true)
-           //{
-                //prompter.teleportPlayer();
-
-                //if (gameObject.name == "Decision Box")
-                //{
-                  //  prompter.teleportPlayer();
-                //}
-                //if (gameObject.name == "ReturnBox")
-                //{
-                //    prompter.teleportPlayer2();
-              //  }
-///=======
-            getDecision();
-            if (playerInRange && gameObject.CompareTag("Decision") && Input.GetKeyDown(KeyCode.Y) && teloChecker == true)
-           {
+            if (gameObject.CompareTag("Decision") && Input.GetKeyDown(KeyCode.Y) && teloChecker)
+            {
                 if (gameObject.name == "Decision Box")
                 {
                     prompter.teleportPlayer();
                 }
-                if (gameObject.name == "ReturnBox")
+                else if (gameObject.name == "ReturnBox")
                 {
                     prompter.teleportPlayer2();
                 }
-//>>>>>>> 0250bc7af660a530fd35b742772c81007335123f
- //       
-
-
-                /* if (Input.GetKeyDown(KeyCode.Y))
-                {
-                    dialogText.text += "Attention Town's people, I know who the culprit is!";
-                    EndDialog();
-                    prompter.teleportPlayer();
-                    waitingDecision = false;
-                }
-                else
-                {
-                    dialogText.text += "No, it's still to early to call it. I can't act rashly now, I've got to be certain I know.";
-                    EndDialog();
-                    waitingDecision = false;
-                }*/
-
-
-//<<<<<<< HEAD
-            //}
-//=======
             }
-//>>>>>>> 0250bc7af660a530fd35b742772c81007335123f
+
             if (Input.GetKeyDown(KeyCode.E))
             {
-               
                 if (!dialogActive)
-                {
                     StartDialog();
-                }
-                else
-                {
+                else if (!awaitingQuestion)
                     ContinueDialog();
+            }
 
+            if (awaitingQuestion)
+            {
+                if (Input.GetKeyDown(KeyCode.Alpha1))
+                {
+                    dialogText.text = response1;
+                    awaitingQuestion = false;
+                }
+                else if (Input.GetKeyDown(KeyCode.Alpha2))
+                {
+                    dialogText.text = response2;
+                    awaitingQuestion = false;
+                }
+                else if (Input.GetKeyDown(KeyCode.Alpha3))
+                {
+                    dialogText.text = response3;
+                    awaitingQuestion = false;
                 }
             }
 
-            if (nameActive && dialogActive && Input.GetKeyDown(KeyCode.Q))
+            if (dialogActive && Input.GetKeyDown(KeyCode.Q))
             {
                 EndDialog();
             }
         }
+
         if (playerInRange && gameObject.CompareTag("Accusation") && Input.GetKeyDown(KeyCode.Y))
         {
             AccuseNPC();
         }
-        
-
     }
 
     void StartDialog()
     {
-        currentLineIndex = 0;
         dialogActive = true;
         dialogBox.SetActive(true);
-        dialogText.text = dialogueLines[currentLineIndex];
-        nameActive = true;
         nameBox.SetActive(true);
-        nameText.text = nameLines[currentLineIndex];
+        nameText.text = nameLines.Length > 0 ? nameLines[0] : gameObject.name;
 
-     //  if (journalManager != null && !hasAddedToJournal && !string.IsNullOrWhiteSpace(journalEntry))
-     //   {
-     //       journalManager.AddEntry(journalEntry);
-     //       hasAddedToJournal = true;
-            //prompter.jounalInc();
-      //  }
+        currentLineIndex = 0;
+        dialogText.text = dialogueLines[currentLineIndex];
+
+        if (journalManager != null && !hasAddedToJournal && !string.IsNullOrWhiteSpace(journalEntry))
+        {
+            journalManager.AddEntry(journalEntry);
+            hasAddedToJournal = true;
+
+            if (journalManager.entryCount >= 5 && !prompter.hasPrompted)
+            {
+                prompter.StartPrompter();
+                prompter.hasPrompted = true;
+            }
+        }
     }
 
     void ContinueDialog()
     {
         currentLineIndex++;
-        ///Debug.Log($"Continuing dialogue: index now {currentLineIndex}/{dialogueLines.Length}");
-        //
 
         if (currentLineIndex < dialogueLines.Length)
         {
             dialogText.text = dialogueLines[currentLineIndex];
-            nameText.text = nameLines[0];
-
-           
         }
-
         else
         {
-
-            EndDialog();
-
-            } 
+            dialogText.text = questionPrompt;
+            awaitingQuestion = true;
         }
-        
-        
-    
+    }
 
     public void EndDialog()
     {
-        if(journalManager != null && !hasAddedToJournal && !string.IsNullOrWhiteSpace(journalEntry))
-        {
-            journalManager.AddEntry(journalEntry);
-            hasAddedToJournal = true;
-
-            if (journalManager.entryCount >= 5 && !prompter.hasPrompted) {
-                prompter.StartPrompter();
-                prompter.hasPrompted = true;
-            }
-           
-           // prompter.jounalInc();
-        }
         dialogBox.SetActive(false);
         dialogActive = false;
         nameBox.SetActive(false);
         nameActive = false;
-
-        
-       
-
+        awaitingQuestion = false;
+        currentLineIndex = 0;
     }
 
     private void OnTriggerEnter2D(Collider2D other)
@@ -210,70 +168,30 @@ public class NPCDialogue : MonoBehaviour
 
     void AccuseNPC()
     {
-
         if (isAccused) return;
         isAccused = true;
 
-
         dialogText.text = $"{nameText.text} has been accused!";
-        if (isCorrectAccused) {
+        if (isCorrectAccused)
+        {
             dialogText.text += "\nYou accused correctly. Justice has been served!";
-            Application.Quit();
         }
         else
         {
             dialogText.text += "\nThat was incorrect. The real culprit is still out there.";
-            Application.Quit();
-
         }
 
         dialogActive = false;
-
-        
-
+        Application.Quit(); // Ends the game
     }
-    //sets setdecision to true, this is so that that the player cannot
-    //teleport themselves early
-//<<<<<<< HEAD
-   // public void setDecision() {
-   //     teloChecker = true;
-        
-  //  }
 
-  //  bool getDecision() {
-   //     return teloChecker;
-   // }
-//=======
-    public void setDecision() {
+    public void setDecision()
+    {
         teloChecker = true;
-        
     }
 
-    bool getDecision() {
+    bool getDecision()
+    {
         return teloChecker;
     }
-//>>>>>>> 0250bc7af660a530fd35b742772c81007335123f
-   /* void DecisionTelo()
-    {
-        if (isDecision) return;
-        isDecision = true;
-
-
-
-        if (isDecision)
-        {
-            
-
-        }
-    }*/
-
-
-
-    // if (nameText.text == "John") {
-
-    //}
-
 }
- 
-
-

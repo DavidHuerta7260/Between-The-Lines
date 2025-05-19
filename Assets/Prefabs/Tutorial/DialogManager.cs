@@ -1,12 +1,10 @@
-using System.Collections;
+﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-//Must add this to use TMP_Text
 using TMPro;
 
 public class DialogManager : MonoBehaviour
 {
-
     public TMP_Text textbox;
     public string[] sentences;
     private int index;
@@ -14,6 +12,8 @@ public class DialogManager : MonoBehaviour
 
     public GameObject continueButton;
     public GameObject dialogPanel;
+    public JournalManager journalManager; // Drag this in the Inspector
+
     private void OnEnable()
     {
         continueButton.SetActive(false);
@@ -31,12 +31,9 @@ public class DialogManager : MonoBehaviour
 
         continueButton.SetActive(true);
     }
-    /// <summary>
-    /// 
-    /// </summary>
+
     public void NextSentence()
     {
-
         continueButton.SetActive(false);
         if (index < sentences.Length - 1)
         {
@@ -48,14 +45,17 @@ public class DialogManager : MonoBehaviour
         {
             textbox.text = " ";
             dialogPanel.SetActive(false);
-        }
 
+            // ✅ Enable journal button/icon after tutorial ends
+            if (journalManager != null && journalManager.journalButton != null)
+            {
+                journalManager.journalButton.SetActive(true);
+            }
+        }
     }
 
-
-    // Update is called once per frame
     void Update()
     {
-
+        // No update logic required for now
     }
 }
