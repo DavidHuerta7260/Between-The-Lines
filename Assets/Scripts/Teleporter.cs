@@ -32,9 +32,9 @@ public class Teleporter : MonoBehaviour
             {
                 if (Input.GetKeyDown(KeyCode.Y))
                 {
-                    npcDialogue.EndDialog();
-                    fadeTo();
-                    teleportPlayer();
+                   npcDialogue.EndDialog();
+                   fadeTo();
+                   teleportPlayer();
 
                 }
 

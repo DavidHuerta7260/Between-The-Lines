@@ -41,7 +41,7 @@ public class Prompter : MonoBehaviour
         {
             if (Input.GetKeyDown(KeyCode.Y))
             {
-                teleportPlayer();
+                ////teleportPlayer();
                 EndPrompter();
             }
 
@@ -49,28 +49,17 @@ public class Prompter : MonoBehaviour
             {
                 prompterContent.text = "When you're ready go back to the center of town and press Y again.";
                 EndPrompter();
-
-                if (!decisionAreaSpawned)
-                {
-                    DecisionArea1.transform.position = DecisionSpawn1prefab.position;
-                    DecisionArea2.transform.position = DecisionSpawn2prefab.position;
-                    decisionAreaSpawned = true;
-                }
             }
-        }
-
-        if (factor == 10 && !hasPrompted)
-        {
-            hasPrompted = true;
-            StartCoroutine(PromptAfterDelay());
         }
     }
 
-    public void StartPrompter()
-    {
+    public void StartPrompter(){
+
+
+        prompterActive = true;
         prompterBox.SetActive(true);
         prompterContent.text = "It seems we have enough evidence to proceed with the Trial? \nYes or No \n(On the Keyboard Hit Y for yes and N for no)";
-        prompterActive = true;
+    
     }
 
     void EndPrompter()
